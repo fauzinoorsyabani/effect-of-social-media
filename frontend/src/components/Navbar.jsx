@@ -1,5 +1,6 @@
 import React from 'react';
-import { Shield, Sliders, Clock, BarChart2, Cpu, User } from 'lucide-react';
+import { Sliders, Clock, BarChart2, Cpu, User } from 'lucide-react';
+import logoWebp from '../assets/logo.webp';
 
 export default function Navbar({ activeTab, setActiveTab, currentUser, onOpenAuthModal }) {
   const tabs = [
@@ -17,9 +18,9 @@ export default function Navbar({ activeTab, setActiveTab, currentUser, onOpenAut
         <div className="flex items-center space-x-3">
           <div 
             id="header-logo-slot" 
-            className="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 to-sky-600 flex items-center justify-center shadow-xs overflow-hidden"
+            className="w-10 h-10 rounded-xl bg-transparent flex items-center justify-center overflow-hidden shrink-0"
           >
-            <Shield className="w-5 h-5 text-white" />
+            <img src={logoWebp} alt="PulseAI Logo" className="w-10 h-10 object-contain hover:scale-105 transition-transform duration-200" />
           </div>
           <div>
             <span className="font-semibold tracking-tight text-lg text-slate-900">

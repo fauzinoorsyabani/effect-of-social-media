@@ -172,6 +172,22 @@ async def index(request):
     return FileResponse(STATIC_DIR / "index.html")
 
 
+async def favicon(request):
+    """Serve the WebP favicon."""
+    fav_path = STATIC_DIR / "favicon.webp"
+    if fav_path.exists():
+        return FileResponse(str(fav_path), media_type="image/webp")
+    return JSONResponse({"error": "No favicon"}, status_code=404)
+
+
+async def logo(request):
+    """Serve the PulseAI WebP logo."""
+    logo_path = STATIC_DIR / "logo.webp"
+    if logo_path.exists():
+        return FileResponse(str(logo_path), media_type="image/webp")
+    return JSONResponse({"error": "No logo"}, status_code=404)
+
+
 async def get_overview(request):
     """Return precomputed dataset summary metrics for dashboards."""
     return JSONResponse(DATA_CACHE["overview"])
@@ -488,6 +504,9 @@ routes = [
     Route("/api/assessments/history", get_history, methods=["GET"]),
     Route("/api/auth/register", register, methods=["POST"]),
     Route("/api/auth/login", login, methods=["POST"]),
+    Route("/favicon.webp", favicon, methods=["GET"]),
+    Route("/favicon.ico", favicon, methods=["GET"]),
+    Route("/logo.webp", logo, methods=["GET"]),
     Mount("/assets", StaticFiles(directory=str(STATIC_DIR / "assets")), name="assets"),
     Mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static"),
 ]

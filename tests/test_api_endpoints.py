@@ -95,6 +95,24 @@ class TestPulseAIEndpoints(unittest.TestCase):
         self.assertTrue(hist_res.get("success"))
         self.assertGreaterEqual(len(hist_res["history"]), 1)
 
+    def test_06_brand_assets(self):
+        # Favicon WebP
+        req = urllib.request.Request(f"{BASE}/favicon.webp")
+        with urllib.request.urlopen(req, timeout=5) as res:
+            self.assertEqual(res.status, 200)
+            self.assertIn("image/webp", res.headers.get("Content-Type", ""))
+            data = res.read()
+            self.assertGreater(len(data), 1000)
+
+        # Logo WebP
+        req = urllib.request.Request(f"{BASE}/logo.webp")
+        with urllib.request.urlopen(req, timeout=5) as res:
+            self.assertEqual(res.status, 200)
+            self.assertIn("image/webp", res.headers.get("Content-Type", ""))
+            data = res.read()
+            self.assertGreater(len(data), 10000)
+
 
 if __name__ == "__main__":
     unittest.main()
+
