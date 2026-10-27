@@ -182,7 +182,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fafbfc] text-[#20252b] flex flex-col font-sans">
+    <div className="min-h-screen text-slate-900 flex flex-col font-sans">
       <Navbar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
@@ -190,7 +190,7 @@ export default function App() {
         onOpenAuthModal={() => setIsAuthModalOpen(true)}
       />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full">
+      <main className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-14 py-10 flex-1 w-full space-y-8">
         {activeTab === 'simulator' && (
           <SimulatorTab
             params={params}
@@ -221,18 +221,19 @@ export default function App() {
         onAuthSuccess={handleAuthSuccess}
       />
 
-      <footer className="mt-16 border-t border-[#e0e5e9] bg-white py-8 text-center text-xs text-[#5b6570] font-mono-num">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <footer className="mt-16 bg-white/80 py-8 text-center text-xs text-slate-500 font-mono-num">
+        <div className="max-w-6xl mx-auto px-6 sm:px-10 flex flex-col sm:flex-row items-center justify-between gap-3">
           <span>PulseAI Student Digital Phenomics Platform</span>
-          <div className="flex items-center space-x-3 text-[11px]">
+          <div className="flex items-center space-x-4 text-[11px] text-slate-600">
             <span>XGBoost 96.2% Acc</span>
             <span>Ridge GPA R² 0.50</span>
             <span>K-Means k=3</span>
           </div>
-          <span className="text-[11px] text-[#5b6570]">Zero Leakage Empirical Pipeline</span>
+          <span className="text-[11px] text-slate-400">Zero Data Leakage Pipeline</span>
         </div>
       </footer>
     </div>
   );
 }
+
 

@@ -3,31 +3,26 @@
 
 :root {
   color-scheme: light;
-  --ink: #20252b;
-  --muted: #5b6570;
-  --line: #e0e5e9;
-  --line-strong: #cbd5e1;
-  --soft: #f4f6f8;
-  --soft-hover: #e9ecef;
-  --accent: #294f82;
-  --accent-hover: #1e3a63;
-  --accent-soft: #eef3f9;
-  --emerald: #059669;
-  --emerald-soft: #ecfdf5;
-  --emerald-line: #a7f3d0;
-  --amber: #d97706;
-  --amber-soft: #fffbeb;
-  --amber-line: #fde68a;
-  --rose: #dc2626;
-  --rose-soft: #fef2f2;
-  --rose-line: #fecaca;
-  --page: #ffffff;
+  --bg-canvas: #f8fafc;
+  --ink: #0f172a;
+  --ink-secondary: #334155;
+  --muted: #64748b;
+  --accent-blue: #2563eb;
+  --accent-blue-hover: #1d4ed8;
+  --accent-indigo: #4f46e5;
+  --danger: #e11d48;
 }
 
 body {
   margin: 0;
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #fafbfc;
+  background-color: #f8fafc;
+  /* Engineering graph paper grid pattern */
+  background-image: 
+    linear-gradient(to right, rgba(148, 163, 184, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-attachment: fixed;
   color: var(--ink);
   min-height: 100vh;
   line-height: 1.6;
@@ -35,26 +30,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* REA-grade Clean Technical Card */
-.rea-card {
+/* Borderless Clean Card with Soft Elevation */
+.clean-card {
   background: #ffffff;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02);
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  border-radius: 14px;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.rea-card:hover {
-  border-color: var(--line-strong);
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.04);
+.clean-card:hover {
+  box-shadow: 0 6px 16px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
 }
 
-/* Technical Range Sliders */
+/* Range Sliders */
 input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
-  height: 5px;
-  background: var(--line);
+  height: 6px;
+  background: #e2e8f0;
   border-radius: 999px;
   outline: none;
   transition: background 0.15s ease;
@@ -66,28 +59,27 @@ input[type="range"]:hover {
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--accent-blue);
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(37, 99, 235, 0.3);
   border: 2px solid #ffffff;
   transition: transform 0.1s ease, background-color 0.15s ease;
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
   transform: scale(1.15);
-  background: var(--accent-hover);
+  background: var(--accent-blue-hover);
 }
 
 /* Gauge Progress Track */
 .gauge-track {
-  background: var(--soft);
-  border: 1px solid var(--line);
+  background: #f1f5f9;
   border-radius: 999px;
   overflow: hidden;
-  height: 7px;
+  height: 8px;
 }
 
 .gauge-fill {
@@ -96,24 +88,8 @@ input[type="range"]::-webkit-slider-thumb:hover {
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
 }
 
-/* Monospace Numbers and Code */
+/* Monospace Numbers */
 .font-mono-num {
   font-family: 'JetBrains Mono', "SFMono-Regular", Consolas, monospace;
   font-feature-settings: "tnum" 1, "zero" 1;
-}
-
-/* Technical Badge */
-.rea-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.15rem 0.5rem;
-  border-radius: 5px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 1.25;
-  border: 1px solid var(--line);
-  background: var(--soft);
-  color: var(--muted);
-  font-family: 'JetBrains Mono', monospace;
 }
