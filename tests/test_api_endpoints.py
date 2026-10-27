@@ -23,7 +23,7 @@ class TestPulseAIEndpoints(unittest.TestCase):
     def test_01_root_page(self):
         status, html = self.request("/")
         self.assertEqual(status, 200)
-        self.assertIn("<!DOCTYPE html>", html)
+        self.assertIn("<!doctype html>", html.lower())
         self.assertIn("PulseAI", html)
 
     def test_02_overview(self):

@@ -84,6 +84,24 @@ effect-of-social-media/
 │   ├── raw/                      # Downloaded dataset (Social_media_impact_on_life.csv)
 │   ├── processed/                # Leak-free Train (3,600), Val (450), Test (450) splits
 │   └── wellness_tracker.db       # SQLite storage for student assessments and history
+├── frontend/                     # Decoupled React + Vite Modern Component Architecture
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx        # Dedicated branding slot and tab switcher
+│   │   │   ├── tabs/
+│   │   │   │   ├── SimulatorTab.jsx         # Real-time reactive lifestyle simulation
+│   │   │   │   ├── PersonalJourneyTab.jsx   # Dual-axis longitudinal tracker & JSON export
+│   │   │   │   ├── CohortAnalyticsTab.jsx   # Population distributions across 4,500 students
+│   │   │   │   └── ModelArchitectureTab.jsx # Machine learning benchmarks & feature attribution
+│   │   │   └── ui/
+│   │   │       └── AuthModal.jsx # Optional multi-device account sync modal
+│   │   ├── services/
+│   │   │   └── api.js            # Typed REST API client interfacing with ASGI backend
+│   │   ├── App.jsx               # Root reactive state coordinator
+│   │   ├── index.css             # Tailwind v4 therapeutic light design tokens
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
 ├── models/                       # Serialized pipelines and evaluation metric JSONs
 │   ├── classifier_overall_impact.joblib
 │   ├── regressor_gpa.joblib
@@ -100,16 +118,16 @@ effect-of-social-media/
 │       ├── classifier.py         # Overall Impact multi-class classifiers
 │       ├── regressor.py          # Continuous GPA & Mental Health regressors
 │       └── clusterer.py          # K-Means & PCA student phenotyping
-├── static/
-│   ├── css/
-│   │   └── style.css             # Low-stress, therapeutic mental health design system
-│   ├── js/
-│   │   └── app.js                # Dual-mode client logic, Chart.js, and live inference
-│   └── index.html                # Modern single-page application dashboard
+├── static/                       # Compiled, minified production assets served by ASGI server
+│   ├── assets/                   # Tree-shaken production bundles (index.js, index.css)
+│   └── index.html                # High-speed static entrypoint (<1KB)
 ├── tests/
-│   └── test_preprocessor.py      # Automated unittest suite validating zero leakage
+│   ├── test_preprocessor.py      # Automated unittest suite validating zero leakage
+│   └── test_api_endpoints.py     # REST API integration tests
 ├── server.py                     # High-performance Starlette/Uvicorn ASGI REST API
 ├── requirements.txt
+├── render.yaml                   # 1-Click Render.com deployment configuration
+├── Procfile                      # Cloud web process entrypoint
 └── README.md
 ```
 
@@ -140,11 +158,25 @@ pip install -r requirements.txt
 ```
 
 ### Step 2: Launch the Web Platform
-Launch the ASGI server:
+
+#### Option A: Production Full-Stack Mode (Single Command)
+Launch the unified ASGI server which serves both the REST API and the compiled React production SPA:
 ```bash
 python server.py
 ```
 Open your browser at **http://localhost:8000**.
+
+#### Option B: Frontend Development Mode (Hot Module Replacement)
+For active UI development with instant sub-millisecond Hot Module Replacement:
+```bash
+# Terminal 1: Start Python API backend
+python server.py
+
+# Terminal 2: Start Vite React Dev Server
+cd frontend
+npm run dev
+```
+Open your browser at **http://localhost:5173** (proxies all `/api` calls directly to port 8000).
 
 ### Step 3: Run Automated Test Suite
 ```bash

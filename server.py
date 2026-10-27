@@ -488,6 +488,7 @@ routes = [
     Route("/api/assessments/history", get_history, methods=["GET"]),
     Route("/api/auth/register", register, methods=["POST"]),
     Route("/api/auth/login", login, methods=["POST"]),
+    Mount("/assets", StaticFiles(directory=str(STATIC_DIR / "assets")), name="assets"),
     Mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static"),
 ]
 
