@@ -1,0 +1,206 @@
+{
+  "best_model": "RandomForest",
+  "models": {
+    "LogisticRegression": {
+      "val_macro_f1": 0.9252,
+      "val_weighted_f1": 0.9784,
+      "test_macro_f1": 0.9105,
+      "test_weighted_f1": 0.9591,
+      "confusion_matrix": [
+        [
+          16,
+          1,
+          0
+        ],
+        [
+          3,
+          60,
+          2
+        ],
+        [
+          0,
+          13,
+          355
+        ]
+      ],
+      "classification_report": {
+        "Negative": {
+          "precision": 0.8421052631578947,
+          "recall": 0.9411764705882353,
+          "f1-score": 0.8888888888888888,
+          "support": 17.0
+        },
+        "Neutral": {
+          "precision": 0.8108108108108109,
+          "recall": 0.9230769230769231,
+          "f1-score": 0.8633093525179856,
+          "support": 65.0
+        },
+        "Beneficial": {
+          "precision": 0.9943977591036415,
+          "recall": 0.9646739130434783,
+          "f1-score": 0.9793103448275862,
+          "support": 368.0
+        },
+        "accuracy": 0.9577777777777777,
+        "macro avg": {
+          "precision": 0.882437944357449,
+          "recall": 0.9429757689028788,
+          "f1-score": 0.9105028620781536,
+          "support": 450.0
+        },
+        "weighted avg": {
+          "precision": 0.962126372281171,
+          "recall": 0.9577777777777777,
+          "f1-score": 0.9591387242696263,
+          "support": 450.0
+        }
+      }
+    },
+    "RandomForest": {
+      "val_macro_f1": 0.9357,
+      "val_weighted_f1": 0.972,
+      "test_macro_f1": 0.879,
+      "test_weighted_f1": 0.9506,
+      "confusion_matrix": [
+        [
+          14,
+          3,
+          0
+        ],
+        [
+          3,
+          59,
+          3
+        ],
+        [
+          0,
+          14,
+          354
+        ]
+      ],
+      "classification_report": {
+        "Negative": {
+          "precision": 0.8235294117647058,
+          "recall": 0.8235294117647058,
+          "f1-score": 0.8235294117647058,
+          "support": 17.0
+        },
+        "Neutral": {
+          "precision": 0.7763157894736842,
+          "recall": 0.9076923076923077,
+          "f1-score": 0.8368794326241135,
+          "support": 65.0
+        },
+        "Beneficial": {
+          "precision": 0.9915966386554622,
+          "recall": 0.9619565217391305,
+          "f1-score": 0.976551724137931,
+          "support": 368.0
+        },
+        "accuracy": 0.9488888888888889,
+        "macro avg": {
+          "precision": 0.8638139466312841,
+          "recall": 0.8977260803987147,
+          "f1-score": 0.8789868561755835,
+          "support": 450.0
+        },
+        "weighted avg": {
+          "precision": 0.9541513096466657,
+          "recall": 0.9488888888888889,
+          "f1-score": 0.9505959946740578,
+          "support": 450.0
+        }
+      }
+    },
+    "XGBoost": {
+      "val_macro_f1": 0.9328,
+      "val_weighted_f1": 0.978,
+      "test_macro_f1": 0.9225,
+      "test_weighted_f1": 0.9632,
+      "confusion_matrix": [
+        [
+          15,
+          2,
+          0
+        ],
+        [
+          1,
+          61,
+          3
+        ],
+        [
+          0,
+          11,
+          357
+        ]
+      ],
+      "classification_report": {
+        "Negative": {
+          "precision": 0.9375,
+          "recall": 0.8823529411764706,
+          "f1-score": 0.9090909090909091,
+          "support": 17.0
+        },
+        "Neutral": {
+          "precision": 0.8243243243243243,
+          "recall": 0.9384615384615385,
+          "f1-score": 0.8776978417266187,
+          "support": 65.0
+        },
+        "Beneficial": {
+          "precision": 0.9916666666666667,
+          "recall": 0.970108695652174,
+          "f1-score": 0.9807692307692307,
+          "support": 368.0
+        },
+        "accuracy": 0.9622222222222222,
+        "macro avg": {
+          "precision": 0.9178303303303302,
+          "recall": 0.9303077250967277,
+          "f1-score": 0.9225193271955862,
+          "support": 450.0
+        },
+        "weighted avg": {
+          "precision": 0.9654486986986988,
+          "recall": 0.9622222222222222,
+          "f1-score": 0.9631732935330056,
+          "support": 450.0
+        }
+      }
+    }
+  },
+  "feature_importances": {
+    "Perceived_Stress_Score": 0.226,
+    "Mental_Health_Index": 0.1975,
+    "Screen_to_Sleep_Ratio": 0.115,
+    "Sleep_Deficit_Impact": 0.0867,
+    "Daily_Usage_Hours": 0.0826,
+    "Academic_Performance_GPA": 0.0779,
+    "Total_Weekly_Screen_Hours": 0.065,
+    "Sleep_Duration_Hours": 0.0371,
+    "Late_Night_Exposure_Index": 0.0311,
+    "Is_Sleep_Deprived": 0.018,
+    "Sleep_Quality_Score": 0.012,
+    "Weekend_Extra_Hours": 0.0112,
+    "Age": 0.0072,
+    "Social_Comparison_Level": 0.0061,
+    "Academic_Level_High School": 0.0024,
+    "Primary_Platform_Instagram": 0.0024,
+    "Primary_Platform_TikTok": 0.0024,
+    "Device_Type_Laptop/PC": 0.0023,
+    "Device_Type_Smartphone": 0.0023,
+    "Academic_Level_Undergraduate": 0.0021,
+    "Gender_Female": 0.0018,
+    "Gender_Male": 0.0018,
+    "Primary_Platform_Snapchat": 0.0016,
+    "Primary_Platform_YouTube": 0.0016,
+    "Primary_Platform_Reddit": 0.0012,
+    "Academic_Level_Postgraduate": 0.0009,
+    "Device_Type_Tablet": 0.0009,
+    "Gender_Prefer not to say": 0.0008,
+    "Primary_Platform_LinkedIn": 0.0007,
+    "Primary_Platform_X (Twitter)": 0.0007,
+    "Gender_Non-Binary": 0.0006
+  }
+}

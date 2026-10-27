@@ -1,0 +1,62 @@
+{
+  "target": "Academic_Performance_GPA",
+  "best_model": "Ridge",
+  "models": {
+    "Ridge": {
+      "val_rmse": 0.2515,
+      "val_mae": 0.2023,
+      "val_r2": 0.5815,
+      "test_rmse": 0.2684,
+      "test_mae": 0.2141,
+      "test_r2": 0.5033
+    },
+    "RandomForestRegressor": {
+      "val_rmse": 0.2515,
+      "val_mae": 0.2021,
+      "val_r2": 0.5813,
+      "test_rmse": 0.2792,
+      "test_mae": 0.2228,
+      "test_r2": 0.4625
+    },
+    "XGBRegressor": {
+      "val_rmse": 0.2548,
+      "val_mae": 0.2044,
+      "val_r2": 0.5705,
+      "test_rmse": 0.2751,
+      "test_mae": 0.218,
+      "test_r2": 0.4783
+    }
+  },
+  "feature_importances": {
+    "Screen_to_Sleep_Ratio": 0.4858,
+    "Total_Weekly_Screen_Hours": 0.112,
+    "Daily_Usage_Hours": 0.0905,
+    "Perceived_Stress_Score": 0.0709,
+    "Sleep_Deficit_Impact": 0.0576,
+    "Mental_Health_Index": 0.0313,
+    "Weekend_Extra_Hours": 0.0309,
+    "Sleep_Duration_Hours": 0.0266,
+    "Age": 0.0166,
+    "Late_Night_Exposure_Index": 0.0159,
+    "Social_Comparison_Level": 0.0133,
+    "Sleep_Quality_Score": 0.0055,
+    "Primary_Platform_TikTok": 0.004,
+    "Primary_Platform_Instagram": 0.0038,
+    "Gender_Female": 0.0033,
+    "Primary_Platform_YouTube": 0.0033,
+    "Device_Type_Laptop/PC": 0.003,
+    "Gender_Male": 0.0029,
+    "Academic_Level_Undergraduate": 0.0027,
+    "Device_Type_Smartphone": 0.0027,
+    "Primary_Platform_Snapchat": 0.0026,
+    "Gender_Non-Binary": 0.0023,
+    "Gender_Prefer not to say": 0.0021,
+    "Primary_Platform_Reddit": 0.0021,
+    "Primary_Platform_X (Twitter)": 0.0021,
+    "Academic_Level_High School": 0.002,
+    "Academic_Level_Postgraduate": 0.0017,
+    "Primary_Platform_LinkedIn": 0.0009,
+    "Device_Type_Tablet": 0.0009,
+    "Is_Sleep_Deprived": 0.0005
+  }
+}

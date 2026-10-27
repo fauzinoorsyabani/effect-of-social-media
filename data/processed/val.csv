@@ -1,0 +1,451 @@
+Student_ID,Age,Gender,Academic_Level,Primary_Platform,Daily_Usage_Hours,Weekend_Extra_Hours,Device_Type,Sleep_Duration_Hours,Sleep_Quality_Score,Late_Night_Usage,Social_Comparison_Frequency,Perceived_Stress_Score,Mental_Health_Index,Academic_Performance_GPA,Overall_Impact
+STU_2026277,22,Female,Postgraduate,TikTok,2.5,2.3,Smartphone,7.2,3,False,Rarely,8.0,90,4.0,Beneficial
+STU_2027474,17,Male,High School,Snapchat,3.0,2.9,Smartphone,7.2,3,True,Rarely,,93,3.83,Beneficial
+STU_2027962,20,Male,Undergraduate,Instagram,5.4,2.2,Smartphone,6.1,2,True,Rarely,14.0,77,3.51,Beneficial
+STU_2027269,24,Male,Postgraduate,TikTok,5.1,2.5,Smartphone,6.0,2,False,Always,16.0,80,3.82,Beneficial
+STU_2025589,18,Female,Undergraduate,Instagram,3.5,1.8,Laptop/PC,6.4,3,False,Frequently,8.0,89,3.6,Beneficial
+STU_2028142,18,Female,Undergraduate,TikTok,3.1,2.5,Smartphone,7.9,3,False,Frequently,15.0,89,3.47,Beneficial
+STU_2025532,21,Male,Undergraduate,YouTube,7.9,2.2,Smartphone,6.0,2,True,Sometimes,20.0,79,2.99,Beneficial
+STU_2025601,15,Female,High School,Instagram,7.4,1.6,Smartphone,4.8,1,True,Sometimes,20.0,68,2.86,Neutral
+STU_2025838,18,Male,Undergraduate,Instagram,4.4,1.2,Smartphone,7.3,3,True,Sometimes,19.0,78,2.88,Beneficial
+STU_2026540,15,Female,High School,Instagram,6.8,2.0,Smartphone,6.4,3,True,Frequently,17.0,82,3.29,Beneficial
+STU_2027214,18,Male,Undergraduate,TikTok,6.3,3.1,Smartphone,7.1,2,True,Sometimes,14.0,78,3.04,Beneficial
+STU_2028156,19,Male,Undergraduate,TikTok,3.1,2.0,Smartphone,7.4,3,True,Always,17.0,92,3.8,Beneficial
+STU_2026294,17,Female,High School,Instagram,4.2,2.0,Smartphone,6.5,2,True,Always,13.0,76,3.69,Beneficial
+STU_2027523,17,Male,High School,Instagram,3.8,1.3,Smartphone,6.6,3,True,Rarely,12.0,79,3.47,Beneficial
+STU_2024814,17,Non-Binary,High School,Snapchat,5.0,2.4,Smartphone,6.6,3,True,Frequently,14.0,83,3.6,Beneficial
+STU_2025356,18,Female,Undergraduate,Instagram,7.6,1.7,Laptop/PC,5.4,1,True,Rarely,18.0,64,3.12,Neutral
+STU_2024274,17,Female,High School,YouTube,4.7,2.6,Smartphone,6.7,3,False,Always,9.0,88,3.42,Beneficial
+STU_2027088,19,Female,Undergraduate,Instagram,3.4,2.4,Smartphone,7.8,3,False,Sometimes,7.0,84,3.77,Beneficial
+STU_2027720,17,Female,High School,Reddit,5.5,1.6,Smartphone,6.0,2,True,Sometimes,11.0,74,3.57,Beneficial
+STU_2028000,17,Male,High School,Reddit,5.2,1.1,Smartphone,5.9,3,True,Frequently,16.0,72,3.46,Beneficial
+STU_2026616,20,Female,Undergraduate,Instagram,4.0,2.2,Smartphone,7.0,3,True,Sometimes,6.0,91,3.94,Beneficial
+STU_2027939,18,Female,Undergraduate,Instagram,4.2,1.3,Smartphone,8.0,4,False,Rarely,8.0,87,3.53,Beneficial
+STU_2028450,21,Male,Undergraduate,YouTube,9.9,1.7,Smartphone,5.0,1,True,Sometimes,30.0,55,3.3,Neutral
+STU_2024104,20,Male,Undergraduate,YouTube,3.2,3.0,Smartphone,6.4,2,False,Rarely,11.0,74,,Beneficial
+STU_2025685,19,Non-Binary,Undergraduate,YouTube,6.0,2.3,Smartphone,6.8,2,True,Never,26.0,75,3.2,Neutral
+STU_2026847,17,Female,High School,Snapchat,9.8,2.9,Smartphone,5.0,1,False,Sometimes,27.0,61,2.65,Neutral
+STU_2026333,18,Female,High School,Instagram,9.8,1.2,Smartphone,5.1,3,True,Frequently,25.0,49,2.95,Neutral
+STU_2028460,18,Male,High School,Instagram,4.5,1.4,Smartphone,6.4,1,False,Frequently,15.0,71,3.76,Beneficial
+STU_2024463,19,Female,Undergraduate,LinkedIn,1.5,2.3,Smartphone,8.2,5,False,Always,6.0,98,3.71,Beneficial
+STU_2025570,17,Female,High School,TikTok,5.2,1.1,Smartphone,7.6,3,True,Always,14.0,82,3.37,Beneficial
+STU_2027931,15,Male,High School,Reddit,2.3,3.3,Laptop/PC,6.3,3,False,Rarely,11.0,82,3.94,Beneficial
+STU_2025485,21,Male,Undergraduate,TikTok,1.9,1.9,Laptop/PC,8.4,4,True,Frequently,8.0,97,3.39,Beneficial
+STU_2028193,17,Female,High School,Instagram,2.1,2.2,Smartphone,7.9,3,True,Always,3.0,98,4.0,Beneficial
+STU_2027267,18,Male,Undergraduate,Instagram,3.9,1.8,Smartphone,7.1,3,False,Always,7.0,81,3.5,Beneficial
+STU_2027388,22,Female,Postgraduate,Snapchat,10.3,0.9,Smartphone,5.4,1,True,Rarely,27.0,69,2.95,Neutral
+STU_2024541,18,Male,High School,Reddit,3.6,3.0,Smartphone,6.0,1,False,Sometimes,13.0,95,3.67,Beneficial
+STU_2027668,17,Non-Binary,High School,YouTube,9.6,2.6,Smartphone,4.2,1,True,Always,29.0,59,2.96,Neutral
+STU_2024257,19,Non-Binary,Undergraduate,YouTube,2.1,2.1,Smartphone,7.3,3,False,Frequently,5.0,98,4.0,Beneficial
+STU_2027452,17,Male,High School,YouTube,3.0,1.5,Smartphone,6.4,2,False,Never,11.0,88,4.0,Beneficial
+STU_2027589,21,Female,Undergraduate,Instagram,7.1,1.9,Smartphone,6.1,1,True,Sometimes,10.0,81,3.25,Beneficial
+STU_2028174,17,Female,High School,X (Twitter),4.4,1.4,Smartphone,7.4,2,False,Sometimes,8.0,98,3.59,Beneficial
+STU_2027444,17,Male,High School,YouTube,4.1,2.6,Smartphone,6.4,2,True,Sometimes,9.0,86,3.28,Beneficial
+STU_2027919,18,Male,Undergraduate,YouTube,7.6,2.4,Smartphone,5.6,1,False,Frequently,15.0,73,3.3,Beneficial
+STU_2024698,18,Female,Undergraduate,YouTube,2.9,2.4,Tablet,7.0,3,True,Sometimes,11.0,91,3.3,Beneficial
+STU_2024474,19,Male,Undergraduate,TikTok,1.9,0.9,Smartphone,7.3,3,True,Sometimes,10.0,95,4.0,Beneficial
+STU_2028486,20,Female,Undergraduate,TikTok,7.0,1.8,Smartphone,5.4,2,True,Frequently,12.0,75,3.23,Beneficial
+STU_2024182,16,Non-Binary,High School,TikTok,2.2,2.4,Smartphone,7.9,3,True,Rarely,5.0,88,4.0,Beneficial
+STU_2024553,18,Female,Undergraduate,Instagram,3.9,1.4,Smartphone,8.0,2,False,Frequently,1.0,98,3.88,Beneficial
+STU_2027954,17,Male,High School,Instagram,3.1,2.7,Smartphone,8.3,3,False,Rarely,10.0,93,3.53,Beneficial
+STU_2025717,18,Female,Undergraduate,Snapchat,8.8,1.6,Smartphone,5.0,1,True,Rarely,18.0,53,3.08,Neutral
+STU_2025105,21,Male,Undergraduate,X (Twitter),14.0,0.6,Smartphone,4.3,1,False,Always,24.0,50,2.31,Negative
+STU_2027307,16,Female,High School,Instagram,4.7,1.3,Smartphone,7.5,4,False,Sometimes,13.0,93,3.59,Beneficial
+STU_2024579,18,Male,Undergraduate,YouTube,6.9,1.7,Smartphone,6.2,1,False,Sometimes,13.0,73,2.88,Beneficial
+STU_2026105,20,Non-Binary,Undergraduate,TikTok,5.5,1.8,Laptop/PC,6.7,3,True,Never,13.0,82,,Beneficial
+STU_2025126,19,Male,Undergraduate,TikTok,2.9,1.3,Laptop/PC,5.7,2,False,Rarely,0.0,81,3.81,Beneficial
+STU_2024574,18,Female,Undergraduate,YouTube,2.7,2.4,Laptop/PC,9.0,4,False,Rarely,11.0,93,3.65,Beneficial
+STU_2028180,21,Female,High School,TikTok,4.3,1.7,Smartphone,7.4,3,True,Sometimes,10.0,94,3.84,Beneficial
+STU_2027334,18,Male,Undergraduate,YouTube,5.4,2.2,Smartphone,7.1,3,True,Frequently,14.0,75,3.12,Beneficial
+STU_2024453,18,Female,Undergraduate,TikTok,11.6,1.2,Smartphone,6.2,1,True,Frequently,20.0,64,2.96,Neutral
+STU_2025708,19,Non-Binary,High School,TikTok,4.7,1.3,Smartphone,7.3,4,True,Frequently,8.0,85,3.6,Beneficial
+STU_2028449,18,Female,Undergraduate,Snapchat,2.4,1.5,Smartphone,8.7,4,False,Sometimes,6.0,98,3.68,Beneficial
+STU_2024204,21,Male,Undergraduate,TikTok,4.1,2.0,Smartphone,7.1,2,False,Sometimes,4.0,77,3.57,Beneficial
+STU_2024225,21,Female,Undergraduate,TikTok,8.6,1.5,Smartphone,4.8,1,False,Sometimes,18.0,53,3.25,Neutral
+STU_2024738,21,Male,Undergraduate,Reddit,7.3,1.8,Smartphone,7.4,3,True,Frequently,16.0,74,3.47,Beneficial
+STU_2024199,21,Male,Undergraduate,TikTok,3.9,1.0,Smartphone,8.2,4,False,Frequently,8.0,93,3.46,Beneficial
+STU_2027964,20,Female,Undergraduate,Instagram,3.4,1.7,Smartphone,8.0,3,False,Frequently,14.0,87,3.65,Beneficial
+STU_2025231,21,Female,High School,Instagram,4.6,3.2,Tablet,7.3,3,True,Frequently,0.0,81,3.53,Beneficial
+STU_2028326,17,Male,High School,Snapchat,14.0,1.7,Smartphone,3.6,1,True,Rarely,20.0,49,2.52,Neutral
+STU_2025832,20,Male,Undergraduate,TikTok,4.2,1.3,Laptop/PC,5.8,2,True,Rarely,17.0,77,3.36,Beneficial
+STU_2025561,20,Female,Undergraduate,YouTube,4.5,1.0,Smartphone,7.0,3,True,Never,16.0,90,3.56,Beneficial
+STU_2024411,17,Female,High School,TikTok,14.0,1.4,Laptop/PC,3.9,1,False,Sometimes,26.0,53,2.48,Negative
+STU_2025944,17,Male,High School,Snapchat,1.5,2.2,Tablet,7.7,3,False,Frequently,8.0,94,3.96,Beneficial
+STU_2026326,20,Female,Undergraduate,Instagram,4.6,1.3,Smartphone,7.5,3,True,Sometimes,14.0,83,3.74,Beneficial
+STU_2024452,20,Male,Undergraduate,YouTube,3.1,1.1,Smartphone,6.9,2,False,Frequently,6.0,91,3.73,Beneficial
+STU_2026993,23,Male,Undergraduate,Instagram,4.1,1.8,Smartphone,5.9,2,False,Frequently,10.0,80,3.83,Beneficial
+STU_2025008,18,Female,Undergraduate,Instagram,3.7,1.6,Laptop/PC,7.5,2,True,Frequently,8.0,84,3.86,Beneficial
+STU_2027731,19,Female,Undergraduate,Instagram,3.4,1.3,Laptop/PC,7.8,3,True,Frequently,16.0,77,3.66,Beneficial
+STU_2027816,18,Female,Undergraduate,YouTube,3.2,2.1,Smartphone,8.7,3,False,Sometimes,4.0,98,3.87,Beneficial
+STU_2028185,18,Male,Undergraduate,Instagram,3.9,1.0,Smartphone,6.1,2,False,Always,8.0,77,4.0,Beneficial
+STU_2026066,20,Male,Undergraduate,TikTok,7.5,2.1,Smartphone,5.3,1,False,Sometimes,19.0,73,2.83,Neutral
+STU_2028468,21,Female,Undergraduate,Snapchat,6.5,2.5,Smartphone,6.5,3,True,Always,16.0,82,3.28,Beneficial
+STU_2028410,20,Male,High School,TikTok,3.7,1.3,Smartphone,6.8,2,False,Frequently,16.0,86,3.7,Beneficial
+STU_2027961,18,Female,Undergraduate,X (Twitter),4.1,1.7,Smartphone,7.5,4,False,Never,0.0,98,3.86,Beneficial
+STU_2027733,18,Male,High School,TikTok,4.0,2.4,Tablet,6.7,3,True,Frequently,9.0,98,3.48,Beneficial
+STU_2027694,17,Male,High School,YouTube,2.5,0.8,Smartphone,10.0,5,False,Frequently,4.0,98,4.0,Beneficial
+STU_2024864,20,Male,High School,Instagram,3.8,0.6,Smartphone,6.6,2,True,Rarely,3.0,96,3.91,Beneficial
+STU_2024431,20,Female,Undergraduate,Instagram,4.3,1.8,Tablet,6.4,3,False,Frequently,14.0,81,3.63,Beneficial
+STU_2025128,19,Female,Undergraduate,Instagram,5.6,2.7,Smartphone,5.0,1,True,Frequently,23.0,69,3.14,Neutral
+STU_2026312,19,Male,Undergraduate,Instagram,3.1,2.0,Smartphone,7.5,3,True,Frequently,15.0,91,3.72,Beneficial
+STU_2025355,18,Male,Undergraduate,YouTube,8.7,2.7,Smartphone,7.2,3,True,Rarely,26.0,62,2.86,Neutral
+STU_2026735,21,Female,High School,TikTok,6.2,1.7,Smartphone,6.8,2,True,Sometimes,9.0,80,3.39,Beneficial
+STU_2025380,19,Female,Undergraduate,Instagram,6.3,1.8,Smartphone,6.8,2,True,Frequently,13.0,85,3.08,Beneficial
+STU_2025921,20,Male,Undergraduate,YouTube,2.3,1.6,Smartphone,7.4,3,False,Rarely,10.0,84,3.78,Beneficial
+STU_2025396,20,Male,Undergraduate,TikTok,5.0,2.3,Smartphone,7.2,3,True,Always,15.0,98,,Beneficial
+STU_2026042,17,Male,High School,Reddit,4.5,2.5,Laptop/PC,6.3,3,True,Sometimes,4.0,81,3.53,Beneficial
+STU_2027368,17,Female,High School,Snapchat,1.5,1.9,Laptop/PC,8.6,4,True,Never,0.0,98,3.7,Beneficial
+STU_2026291,20,Female,Undergraduate,TikTok,8.0,1.5,Smartphone,4.8,1,True,Rarely,28.0,75,3.21,Neutral
+STU_2028211,19,Male,Undergraduate,TikTok,5.4,2.6,Smartphone,5.4,3,True,Rarely,19.0,79,3.81,Beneficial
+STU_2025329,17,Female,High School,YouTube,5.2,2.3,Smartphone,7.4,3,True,Rarely,5.0,86,3.67,Beneficial
+STU_2028105,16,Male,High School,TikTok,4.6,2.7,Smartphone,7.1,4,True,Rarely,17.0,94,,Beneficial
+STU_2025189,19,Male,Undergraduate,TikTok,3.7,2.1,Smartphone,7.6,4,False,Sometimes,15.0,91,3.27,Beneficial
+STU_2025911,19,Female,Undergraduate,X (Twitter),2.8,1.2,Smartphone,9.5,4,False,Always,4.0,97,3.16,Beneficial
+STU_2024469,20,Female,Undergraduate,X (Twitter),5.4,0.5,Smartphone,6.0,1,True,Sometimes,14.0,70,3.24,Beneficial
+STU_2026864,19,Female,Undergraduate,Instagram,4.0,2.3,Smartphone,6.3,2,True,Always,11.0,86,3.35,Beneficial
+STU_2027039,19,Female,Undergraduate,TikTok,8.5,2.1,Smartphone,6.8,1,True,Frequently,15.0,88,3.51,Beneficial
+STU_2027642,18,Female,Undergraduate,Snapchat,3.8,1.3,Smartphone,5.9,3,True,Sometimes,23.0,72,3.53,Beneficial
+STU_2026955,19,Prefer not to say,Undergraduate,Instagram,5.6,1.4,Laptop/PC,6.6,2,True,Rarely,3.0,90,3.35,Beneficial
+STU_2026175,22,Female,Postgraduate,YouTube,1.6,2.2,Smartphone,7.1,3,False,Sometimes,6.0,98,3.57,Beneficial
+STU_2025004,22,Female,Postgraduate,Instagram,4.9,1.5,Smartphone,7.0,2,False,Rarely,14.0,70,3.89,Beneficial
+STU_2024955,20,Female,Undergraduate,Instagram,8.6,2.3,Smartphone,5.5,3,True,Frequently,23.0,57,3.06,Neutral
+STU_2028013,25,Female,Undergraduate,X (Twitter),1.9,3.7,Smartphone,7.0,3,True,Sometimes,8.0,81,3.75,Beneficial
+STU_2027914,15,Male,High School,YouTube,4.1,1.3,Smartphone,7.4,2,False,Sometimes,13.0,86,,Beneficial
+STU_2026241,18,Male,Undergraduate,Instagram,11.5,2.7,Smartphone,5.0,1,True,Rarely,33.0,54,2.64,Negative
+STU_2024259,19,Female,Undergraduate,Instagram,8.4,1.1,Smartphone,5.9,1,True,Frequently,26.0,65,3.46,Neutral
+STU_2025634,18,Female,Undergraduate,Instagram,1.3,1.9,Smartphone,10.5,5,True,Always,5.0,98,3.8,Beneficial
+STU_2027012,19,Male,Undergraduate,Snapchat,10.5,1.3,Smartphone,4.0,1,False,Sometimes,29.0,52,2.53,Negative
+STU_2028492,22,Male,Postgraduate,Snapchat,3.6,2.5,Smartphone,7.0,4,True,Frequently,11.0,92,3.42,Beneficial
+STU_2025433,15,Female,High School,Snapchat,3.6,0.2,Smartphone,5.8,1,False,Sometimes,12.0,81,3.43,Beneficial
+STU_2024320,16,Female,High School,Instagram,8.6,2.3,Smartphone,4.5,1,True,Always,22.0,58,2.77,Neutral
+STU_2025290,18,Female,Undergraduate,YouTube,6.1,3.7,Smartphone,7.0,3,True,Always,17.0,86,3.22,Beneficial
+STU_2025213,17,Male,High School,TikTok,4.6,2.3,Smartphone,7.7,1,True,Always,20.0,82,3.11,Beneficial
+STU_2027744,15,Male,High School,Instagram,3.2,1.4,Laptop/PC,7.2,2,False,Rarely,14.0,96,3.51,Beneficial
+STU_2026558,17,Female,High School,Instagram,4.3,1.4,Smartphone,7.8,4,True,Sometimes,7.0,90,3.35,Beneficial
+STU_2027383,20,Male,Undergraduate,YouTube,3.8,1.1,Smartphone,8.3,4,False,Frequently,3.0,96,4.0,Beneficial
+STU_2026999,17,Female,High School,YouTube,3.0,2.2,Smartphone,6.8,3,True,Always,9.0,90,3.79,Beneficial
+STU_2028333,19,Female,Undergraduate,YouTube,6.6,0.7,Smartphone,6.0,2,True,Always,9.0,83,3.39,Beneficial
+STU_2026473,22,Female,Postgraduate,Instagram,12.6,2.2,Smartphone,3.5,1,True,Sometimes,40.0,37,2.68,Negative
+STU_2028304,18,Male,Undergraduate,Snapchat,13.4,0.1,Smartphone,5.2,1,True,Rarely,25.0,50,2.69,Neutral
+STU_2025880,18,Non-Binary,Undergraduate,Instagram,4.8,1.1,Smartphone,5.6,1,True,Frequently,14.0,70,3.38,Beneficial
+STU_2026991,16,Male,High School,TikTok,9.4,1.9,Smartphone,5.3,1,True,Sometimes,24.0,60,3.31,Neutral
+STU_2027876,18,Female,Undergraduate,YouTube,6.4,2.6,Smartphone,6.2,2,True,Frequently,23.0,74,2.65,Neutral
+STU_2027865,21,Male,Undergraduate,Reddit,5.2,3.0,Laptop/PC,8.0,3,True,Sometimes,9.0,89,4.0,Beneficial
+STU_2025123,21,Male,Undergraduate,Snapchat,4.5,1.7,Smartphone,6.6,3,False,Sometimes,12.0,88,3.17,Beneficial
+STU_2027557,20,Female,Undergraduate,Instagram,7.3,1.3,Smartphone,4.4,1,True,Rarely,20.0,70,3.26,Beneficial
+STU_2026854,18,Male,Undergraduate,Instagram,2.8,0.6,Smartphone,8.8,4,False,Always,10.0,84,2.91,Beneficial
+STU_2025899,16,Male,High School,YouTube,4.5,1.6,Laptop/PC,5.7,1,True,Rarely,11.0,88,3.43,Beneficial
+STU_2025964,17,Female,High School,X (Twitter),1.9,1.6,Smartphone,7.9,3,False,Frequently,8.0,93,3.82,Beneficial
+STU_2027678,18,Male,Undergraduate,Instagram,10.8,1.7,Smartphone,6.1,1,False,Frequently,18.0,68,2.85,Neutral
+STU_2024658,17,Male,High School,YouTube,13.5,2.6,Smartphone,5.4,1,True,Sometimes,31.0,44,2.25,Negative
+STU_2028285,19,Female,Undergraduate,YouTube,4.9,3.3,Smartphone,5.9,3,True,Frequently,13.0,81,3.8,Beneficial
+STU_2024930,21,Male,High School,TikTok,3.7,1.0,Laptop/PC,5.5,2,False,Rarely,11.0,77,3.51,Beneficial
+STU_2026126,18,Female,Undergraduate,Instagram,4.3,2.2,Laptop/PC,5.1,2,True,Sometimes,19.0,73,3.72,Beneficial
+STU_2024635,18,Male,Undergraduate,Instagram,6.1,1.5,Laptop/PC,6.0,2,True,Always,19.0,70,3.38,Beneficial
+STU_2027631,18,Female,Undergraduate,TikTok,4.8,2.1,Smartphone,5.6,3,True,Never,6.0,78,3.53,Beneficial
+STU_2024891,18,Male,Undergraduate,Reddit,4.0,2.6,Smartphone,7.3,4,True,Sometimes,17.0,85,3.43,Beneficial
+STU_2028100,19,Prefer not to say,Undergraduate,Instagram,2.5,1.6,Smartphone,6.9,3,True,Sometimes,18.0,87,3.73,Beneficial
+STU_2028066,19,Female,Undergraduate,TikTok,2.8,2.4,Smartphone,7.1,4,False,Frequently,8.0,90,4.0,Beneficial
+STU_2028319,15,Female,High School,Reddit,7.3,2.0,Smartphone,7.2,2,True,Frequently,15.0,70,3.03,Beneficial
+STU_2027511,20,Female,Undergraduate,YouTube,4.0,1.0,Smartphone,6.5,2,True,Always,8.0,88,3.86,Beneficial
+STU_2024970,17,Male,High School,YouTube,5.5,1.8,Smartphone,6.4,2,True,Always,19.0,83,3.02,Beneficial
+STU_2025679,19,Female,Undergraduate,TikTok,6.8,2.9,Smartphone,7.3,3,True,Sometimes,19.0,76,3.62,Beneficial
+STU_2025795,22,Female,Postgraduate,Snapchat,3.8,2.8,Smartphone,6.6,3,False,Sometimes,15.0,85,3.52,Beneficial
+STU_2026678,19,Female,Undergraduate,TikTok,4.8,2.4,Smartphone,6.5,2,True,Rarely,13.0,83,3.38,Beneficial
+STU_2025743,20,Male,Undergraduate,YouTube,4.8,2.8,Smartphone,8.1,3,True,Frequently,6.0,78,3.13,Beneficial
+STU_2024039,17,Male,High School,TikTok,3.3,1.7,Laptop/PC,6.0,1,False,Frequently,15.0,87,,Beneficial
+STU_2028109,22,Female,Postgraduate,Snapchat,12.4,0.2,Smartphone,5.7,1,True,Rarely,18.0,59,2.78,Neutral
+STU_2025940,18,Male,Undergraduate,YouTube,5.8,2.3,Laptop/PC,6.8,3,True,Frequently,10.0,82,,Beneficial
+STU_2027812,19,Male,Undergraduate,YouTube,4.0,1.7,Smartphone,6.5,3,False,Sometimes,11.0,79,3.28,Beneficial
+STU_2028264,19,Prefer not to say,Undergraduate,Instagram,13.6,2.4,Laptop/PC,4.6,1,True,Always,28.0,44,2.31,Negative
+STU_2024660,19,Male,Undergraduate,YouTube,4.5,1.5,Smartphone,6.2,3,False,Frequently,11.0,76,3.68,Beneficial
+STU_2027281,19,Female,Undergraduate,TikTok,4.5,1.3,Smartphone,6.2,1,False,Always,3.0,87,3.52,Beneficial
+STU_2026504,21,Male,Undergraduate,Instagram,5.7,1.5,Tablet,6.2,2,False,Rarely,,79,3.42,Beneficial
+STU_2025869,18,Female,Undergraduate,Reddit,8.3,1.7,Smartphone,6.6,2,True,Never,17.0,66,3.51,Beneficial
+STU_2027346,18,Female,High School,Instagram,2.2,0.5,Smartphone,9.0,5,True,Rarely,0.0,98,3.79,Beneficial
+STU_2025598,22,Male,Postgraduate,Instagram,11.5,0.9,Laptop/PC,4.0,1,True,Frequently,33.0,51,2.7,Negative
+STU_2024339,19,Male,Undergraduate,X (Twitter),3.9,2.2,Smartphone,7.9,3,False,Always,8.0,87,3.16,Beneficial
+STU_2026967,19,Male,Undergraduate,Instagram,6.1,2.6,Laptop/PC,6.6,1,True,Sometimes,16.0,79,2.93,Beneficial
+STU_2026397,20,Male,Undergraduate,Reddit,7.0,1.8,Smartphone,7.0,3,False,Frequently,19.0,72,3.07,Beneficial
+STU_2026183,25,Female,Postgraduate,Instagram,3.8,2.8,Smartphone,6.7,2,False,Sometimes,18.0,89,3.42,Beneficial
+STU_2026442,23,Female,Postgraduate,YouTube,4.5,1.4,Laptop/PC,6.6,2,True,Sometimes,14.0,78,4.0,Beneficial
+STU_2026248,18,Male,Undergraduate,TikTok,4.8,2.7,Laptop/PC,7.5,2,True,Sometimes,14.0,83,3.45,Beneficial
+STU_2027526,18,Female,Undergraduate,Reddit,6.5,2.1,Smartphone,6.4,3,True,Rarely,18.0,66,3.18,Neutral
+STU_2026782,18,Female,Undergraduate,TikTok,6.5,1.4,Smartphone,8.0,3,False,Sometimes,13.0,73,3.26,Beneficial
+STU_2024817,19,Male,Undergraduate,YouTube,7.4,1.8,Smartphone,5.8,1,False,Sometimes,15.0,78,3.39,Beneficial
+STU_2025190,19,Male,Undergraduate,Snapchat,5.8,2.4,Smartphone,5.3,1,True,Always,14.0,78,3.51,Beneficial
+STU_2025419,26,Female,Postgraduate,Instagram,3.9,1.4,Laptop/PC,8.3,3,False,Rarely,9.0,87,3.84,Beneficial
+STU_2024248,21,Male,Undergraduate,YouTube,4.0,2.5,Smartphone,6.0,3,False,Never,9.0,79,3.69,Beneficial
+STU_2028421,18,Female,Undergraduate,TikTok,5.8,0.9,Smartphone,5.6,2,True,Sometimes,23.0,70,3.25,Neutral
+STU_2024441,15,Male,High School,Snapchat,5.1,1.3,Smartphone,6.8,2,True,Always,10.0,77,3.16,Beneficial
+STU_2025315,18,Male,Undergraduate,Instagram,2.3,1.6,Smartphone,9.1,5,False,Sometimes,8.0,94,4.0,Beneficial
+STU_2024439,18,Female,Undergraduate,YouTube,10.6,1.3,Laptop/PC,6.4,2,True,Frequently,27.0,56,2.71,Neutral
+STU_2027309,20,Female,Undergraduate,TikTok,4.4,3.0,Smartphone,7.0,3,False,Sometimes,10.0,94,3.61,Beneficial
+STU_2027369,15,Male,High School,Snapchat,3.8,2.0,Smartphone,8.1,3,False,Sometimes,2.0,93,3.73,Beneficial
+STU_2025407,17,Female,High School,Snapchat,8.3,2.3,Smartphone,5.5,1,True,Sometimes,12.0,62,2.71,Neutral
+STU_2025228,18,Female,High School,Snapchat,3.1,1.8,Smartphone,6.8,3,False,Rarely,10.0,89,3.78,Beneficial
+STU_2024044,21,Female,Undergraduate,Instagram,7.6,1.6,Smartphone,5.9,1,True,Rarely,25.0,70,,Neutral
+STU_2026496,17,Female,High School,YouTube,2.6,2.0,Smartphone,7.5,2,True,Rarely,6.0,93,3.53,Beneficial
+STU_2027016,21,Male,Undergraduate,Instagram,4.5,1.7,Smartphone,5.7,1,True,Frequently,14.0,80,3.59,Beneficial
+STU_2024712,20,Female,Undergraduate,YouTube,5.1,1.6,Smartphone,6.5,3,True,Sometimes,13.0,74,3.27,Beneficial
+STU_2026043,20,Female,Undergraduate,Instagram,5.6,1.4,Smartphone,7.1,2,True,Sometimes,14.0,70,3.33,Beneficial
+STU_2028026,17,Male,High School,TikTok,7.4,1.8,Smartphone,6.2,2,True,Frequently,20.0,73,2.74,Neutral
+STU_2027029,18,Male,Undergraduate,YouTube,7.5,2.6,Smartphone,6.8,3,True,Always,19.0,70,3.76,Beneficial
+STU_2024387,24,Female,Postgraduate,Instagram,3.7,1.7,Smartphone,7.5,4,False,Always,8.0,95,3.35,Beneficial
+STU_2027089,20,Male,Undergraduate,Instagram,3.7,2.2,Smartphone,7.1,3,False,Always,10.0,85,3.93,Beneficial
+STU_2025335,18,Female,Undergraduate,TikTok,3.9,0.7,Smartphone,5.5,1,True,Sometimes,7.0,89,3.33,Beneficial
+STU_2024542,17,Female,High School,LinkedIn,6.5,1.8,Smartphone,5.1,1,True,Frequently,16.0,69,3.18,Beneficial
+STU_2024889,17,Male,High School,Instagram,7.6,2.2,Smartphone,4.5,2,True,Frequently,21.0,70,3.12,Neutral
+STU_2025165,21,Male,Undergraduate,TikTok,4.1,2.0,Smartphone,6.7,3,True,Rarely,9.0,92,3.83,Beneficial
+STU_2027209,20,Male,Undergraduate,Instagram,2.3,2.7,Laptop/PC,7.0,2,True,Rarely,6.0,90,4.0,Beneficial
+STU_2028278,20,Female,Undergraduate,YouTube,2.5,1.2,Smartphone,7.4,3,False,Sometimes,6.0,78,3.78,Beneficial
+STU_2024194,22,Male,Postgraduate,LinkedIn,7.0,2.6,Laptop/PC,4.4,1,False,Never,19.0,57,3.32,Neutral
+STU_2027990,18,Female,Undergraduate,Instagram,7.4,0.3,Smartphone,5.7,2,True,Frequently,16.0,80,3.14,Beneficial
+STU_2025176,16,Male,High School,Snapchat,1.9,1.0,Laptop/PC,7.7,3,True,Rarely,6.0,89,3.75,Beneficial
+STU_2024934,19,Male,Undergraduate,Instagram,4.5,1.5,Smartphone,6.1,2,True,Always,5.0,96,3.72,Beneficial
+STU_2026218,19,Male,Undergraduate,Instagram,3.3,0.9,Smartphone,6.8,3,False,Always,7.0,81,3.27,Beneficial
+STU_2026983,22,Male,Postgraduate,YouTube,13.2,1.6,Smartphone,4.7,1,True,Frequently,30.0,47,2.44,Negative
+STU_2026923,18,Male,Undergraduate,Instagram,2.5,1.8,Smartphone,6.4,4,True,Always,10.0,89,3.28,Beneficial
+STU_2025188,19,Male,Undergraduate,TikTok,4.3,3.0,Smartphone,9.3,4,False,Frequently,6.0,98,3.79,Beneficial
+STU_2027938,19,Male,Undergraduate,Instagram,5.8,1.5,Laptop/PC,7.1,2,True,Frequently,15.0,73,3.53,Beneficial
+STU_2027220,15,Male,High School,Snapchat,7.0,1.5,Smartphone,5.1,1,True,Sometimes,22.0,52,3.33,Neutral
+STU_2028276,18,Female,Undergraduate,Instagram,5.0,2.3,Smartphone,5.9,3,True,Rarely,16.0,67,3.52,Beneficial
+STU_2025086,19,Male,Undergraduate,Snapchat,10.6,2.4,Smartphone,6.3,2,True,Rarely,21.0,53,3.35,Neutral
+STU_2024789,19,Male,Undergraduate,YouTube,5.0,1.6,Smartphone,6.4,3,False,Frequently,8.0,78,3.49,Beneficial
+STU_2025161,15,Female,High School,TikTok,2.1,2.5,Smartphone,7.4,4,False,Frequently,,90,3.7,Beneficial
+STU_2026142,20,Male,Undergraduate,Instagram,4.5,2.0,Smartphone,6.2,1,True,Rarely,15.0,87,3.71,Beneficial
+STU_2024888,23,Female,Postgraduate,Instagram,8.2,2.2,Smartphone,5.8,2,True,Sometimes,21.0,59,3.25,Neutral
+STU_2027055,19,Male,Undergraduate,Instagram,2.8,0.0,Smartphone,6.8,4,False,Sometimes,12.0,89,3.8,Beneficial
+STU_2026344,18,Female,Undergraduate,Instagram,11.8,1.8,Smartphone,3.8,1,False,Frequently,20.0,56,2.75,Neutral
+STU_2026721,18,Female,High School,TikTok,4.8,1.1,Smartphone,7.3,2,True,Sometimes,7.0,87,3.5,Beneficial
+STU_2027530,18,Male,Undergraduate,Instagram,4.9,1.3,Smartphone,7.3,3,False,Frequently,15.0,77,3.29,Beneficial
+STU_2025951,18,Female,Undergraduate,TikTok,4.2,1.4,Smartphone,7.6,3,True,Always,9.0,86,3.61,Beneficial
+STU_2026179,19,Male,High School,TikTok,4.7,1.2,Smartphone,7.5,3,True,Frequently,13.0,80,3.93,Beneficial
+STU_2027409,15,Male,High School,Instagram,3.9,2.0,Laptop/PC,8.0,2,False,Rarely,16.0,83,3.7,Beneficial
+STU_2026211,19,Female,Undergraduate,TikTok,4.0,3.0,Smartphone,5.2,1,True,Sometimes,18.0,77,3.85,Beneficial
+STU_2028125,17,Female,High School,X (Twitter),11.8,0.5,Smartphone,4.5,1,True,Sometimes,24.0,58,3.26,Neutral
+STU_2026120,20,Female,Undergraduate,Instagram,6.5,1.6,Smartphone,6.3,2,True,Always,17.0,78,3.66,Beneficial
+STU_2026072,18,Female,Undergraduate,YouTube,8.0,1.9,Smartphone,6.2,1,True,Frequently,22.0,67,2.85,Neutral
+STU_2025829,16,Female,High School,Instagram,7.1,1.9,Smartphone,5.7,2,True,Rarely,18.0,81,3.34,Beneficial
+STU_2027138,15,Male,High School,Instagram,3.8,0.2,Smartphone,5.8,2,True,Frequently,13.0,88,3.53,Beneficial
+STU_2024697,20,Male,Undergraduate,TikTok,2.2,1.6,Smartphone,6.6,3,False,Sometimes,5.0,93,3.82,Beneficial
+STU_2026638,16,Male,High School,TikTok,3.5,2.3,Smartphone,8.4,4,False,Sometimes,0.0,91,4.0,Beneficial
+STU_2025061,23,Non-Binary,Postgraduate,TikTok,5.1,1.1,Smartphone,7.3,2,True,Always,9.0,93,3.33,Beneficial
+STU_2027445,15,Male,High School,Reddit,6.0,0.6,Smartphone,6.4,2,True,Frequently,19.0,64,3.28,Neutral
+STU_2027507,19,Male,Undergraduate,Instagram,4.1,2.2,Smartphone,7.6,3,False,Sometimes,10.0,86,3.8,Beneficial
+STU_2024355,19,Male,Undergraduate,TikTok,4.1,2.2,Smartphone,6.6,3,True,Rarely,13.0,84,3.83,Beneficial
+STU_2025777,21,Female,Undergraduate,TikTok,5.0,0.5,Smartphone,7.4,3,True,Sometimes,18.0,83,3.29,Beneficial
+STU_2024284,19,Male,Undergraduate,Instagram,4.4,2.8,Smartphone,8.4,3,False,Sometimes,0.0,85,3.83,Beneficial
+STU_2025918,20,Male,Undergraduate,TikTok,14.0,2.5,Laptop/PC,4.4,1,True,Rarely,30.0,43,2.97,Negative
+STU_2028339,24,Male,Postgraduate,YouTube,4.2,1.3,Smartphone,6.4,2,True,Sometimes,10.0,95,3.31,Beneficial
+STU_2027073,17,Female,High School,Snapchat,6.1,2.9,Smartphone,6.2,1,True,Never,9.0,85,3.45,Beneficial
+STU_2025889,19,Female,Undergraduate,YouTube,4.8,2.1,Tablet,7.0,3,False,Sometimes,9.0,85,3.4,Beneficial
+STU_2027591,24,Female,Postgraduate,TikTok,5.1,1.8,Smartphone,6.0,1,False,Sometimes,28.0,65,3.61,Neutral
+STU_2026015,19,Male,Undergraduate,YouTube,4.7,3.0,Smartphone,6.1,2,True,Sometimes,8.0,77,3.27,Beneficial
+STU_2027657,20,Male,Undergraduate,Instagram,3.2,1.9,Smartphone,7.1,3,True,Rarely,4.0,88,3.77,Beneficial
+STU_2026642,22,Male,Postgraduate,Instagram,1.8,1.6,Laptop/PC,8.0,4,False,Always,8.0,94,3.66,Beneficial
+STU_2026350,18,Female,Undergraduate,YouTube,6.9,1.2,Smartphone,6.6,2,True,Sometimes,18.0,81,3.64,Beneficial
+STU_2028487,17,Prefer not to say,High School,Instagram,8.8,2.5,Smartphone,6.2,1,True,Frequently,21.0,68,3.5,Beneficial
+STU_2028146,19,Female,Undergraduate,X (Twitter),2.5,2.6,Smartphone,7.6,4,True,Never,11.0,96,3.69,Beneficial
+STU_2026526,17,Male,High School,LinkedIn,4.6,0.9,Smartphone,8.0,3,True,Frequently,13.0,90,3.31,Beneficial
+STU_2025453,17,Female,High School,TikTok,3.9,1.7,Smartphone,8.1,3,False,Frequently,8.0,90,3.96,Beneficial
+STU_2025725,18,Male,Undergraduate,TikTok,2.5,1.9,Smartphone,7.1,4,True,Rarely,10.0,88,3.69,Beneficial
+STU_2027602,17,Female,High School,YouTube,4.5,2.2,Laptop/PC,8.0,5,False,Frequently,16.0,91,3.66,Beneficial
+STU_2026073,18,Male,Undergraduate,Instagram,5.1,1.5,Smartphone,6.8,3,True,Frequently,4.0,96,3.75,Beneficial
+STU_2026747,16,Male,High School,TikTok,4.9,2.3,Smartphone,6.5,2,True,Always,14.0,88,3.48,Beneficial
+STU_2025071,19,Male,High School,YouTube,5.8,1.8,Laptop/PC,6.5,2,True,Always,16.0,84,3.05,Beneficial
+STU_2024525,20,Female,Undergraduate,X (Twitter),1.9,2.6,Smartphone,8.3,4,False,Never,7.0,89,4.0,Beneficial
+STU_2027783,20,Male,Undergraduate,LinkedIn,4.6,1.1,Smartphone,7.8,3,True,Always,7.0,89,3.37,Beneficial
+STU_2026515,19,Male,Undergraduate,Snapchat,3.6,1.5,Smartphone,7.8,3,False,Sometimes,14.0,71,3.25,Beneficial
+STU_2024014,19,Male,Undergraduate,YouTube,6.6,2.3,Tablet,5.7,3,False,Sometimes,17.0,64,2.98,Neutral
+STU_2027018,21,Female,Undergraduate,Instagram,6.8,2.1,Smartphone,6.4,1,True,Rarely,12.0,88,3.28,Beneficial
+STU_2025346,22,Male,Postgraduate,Instagram,4.9,2.9,Smartphone,7.6,3,False,Never,9.0,83,3.26,Beneficial
+STU_2026896,17,Female,High School,Instagram,9.0,3.0,Smartphone,5.0,1,True,Sometimes,27.0,55,3.43,Neutral
+STU_2027827,17,Male,High School,TikTok,4.1,2.1,Smartphone,5.9,3,True,Sometimes,15.0,86,3.56,Beneficial
+STU_2026862,23,Female,Undergraduate,YouTube,5.9,3.9,Smartphone,6.3,2,True,Frequently,8.0,71,3.04,Beneficial
+STU_2028255,22,Female,Postgraduate,Instagram,4.1,0.6,Smartphone,8.4,3,True,Never,8.0,92,3.45,Beneficial
+STU_2027943,19,Male,Undergraduate,TikTok,6.7,2.5,Smartphone,5.8,2,True,Rarely,17.0,68,3.22,Beneficial
+STU_2025479,18,Female,Undergraduate,TikTok,5.1,1.5,Smartphone,6.7,3,True,Frequently,18.0,86,3.63,Beneficial
+STU_2028342,17,Female,High School,X (Twitter),6.3,1.6,Laptop/PC,5.6,2,True,Always,16.0,68,3.27,Beneficial
+STU_2024605,19,Female,Undergraduate,TikTok,5.3,1.0,Smartphone,7.3,2,True,Always,10.0,89,3.52,Beneficial
+STU_2027298,17,Female,High School,Instagram,7.6,1.3,Smartphone,6.4,1,True,Rarely,18.0,71,3.35,Beneficial
+STU_2026104,19,Male,Undergraduate,Reddit,6.3,2.9,Laptop/PC,8.5,3,False,Rarely,10.0,82,3.96,Beneficial
+STU_2025966,19,Male,Undergraduate,YouTube,3.2,0.8,Smartphone,6.5,2,True,Frequently,10.0,87,3.51,Beneficial
+STU_2025719,18,Non-Binary,Undergraduate,Instagram,3.5,1.6,Smartphone,7.9,3,True,Rarely,7.0,87,3.82,Beneficial
+STU_2025029,20,Female,Undergraduate,TikTok,3.7,1.6,Smartphone,7.0,3,True,Frequently,11.0,78,3.48,Beneficial
+STU_2028150,18,Prefer not to say,Undergraduate,TikTok,3.1,2.1,Smartphone,8.3,4,False,Frequently,12.0,95,4.0,Beneficial
+STU_2027928,18,Male,Undergraduate,YouTube,5.9,1.1,Smartphone,7.9,2,True,Frequently,12.0,80,3.42,Beneficial
+STU_2026001,17,Male,High School,Instagram,8.1,1.5,Smartphone,6.2,2,True,Frequently,16.0,80,3.13,Beneficial
+STU_2026188,20,Male,High School,YouTube,3.9,1.7,Smartphone,8.7,3,False,Rarely,14.0,85,3.69,Beneficial
+STU_2024764,17,Male,High School,TikTok,2.0,1.7,Laptop/PC,8.9,5,False,Sometimes,0.0,97,4.0,Beneficial
+STU_2025786,17,Male,High School,Instagram,3.0,2.0,Smartphone,6.3,3,True,Always,14.0,88,3.54,Beneficial
+STU_2025681,18,Female,Undergraduate,Instagram,10.1,1.9,Smartphone,5.4,1,True,Sometimes,21.0,58,2.92,Neutral
+STU_2024449,18,Female,Undergraduate,Reddit,2.8,2.1,Smartphone,8.1,4,False,Always,8.0,91,3.73,Beneficial
+STU_2025175,19,Male,Undergraduate,TikTok,8.5,2.5,Smartphone,4.8,1,True,Always,18.0,51,3.1,Neutral
+STU_2024714,18,Female,Undergraduate,Instagram,2.6,1.4,Smartphone,7.4,2,True,Never,0.0,89,3.85,Beneficial
+STU_2026275,15,Male,High School,Snapchat,3.7,2.4,Smartphone,8.3,4,False,Always,6.0,89,4.0,Beneficial
+STU_2028058,20,Female,Undergraduate,TikTok,2.6,2.3,Smartphone,7.5,5,True,Rarely,14.0,90,3.73,Beneficial
+STU_2027072,18,Male,Undergraduate,Instagram,2.8,1.5,Smartphone,6.3,2,False,Sometimes,11.0,86,3.53,Beneficial
+STU_2026986,20,Male,High School,X (Twitter),1.8,2.4,Laptop/PC,8.6,4,False,Sometimes,2.0,98,3.96,Beneficial
+STU_2024716,17,Female,High School,Instagram,6.9,2.3,Smartphone,5.7,2,True,Sometimes,23.0,68,2.78,Neutral
+STU_2027165,19,Female,Undergraduate,TikTok,7.3,2.2,Smartphone,6.0,2,False,Rarely,17.0,67,3.28,Beneficial
+STU_2024756,17,Female,High School,TikTok,6.6,1.7,Smartphone,8.2,3,True,Sometimes,9.0,88,3.29,Beneficial
+STU_2024429,18,Female,Undergraduate,Instagram,5.0,0.5,Smartphone,6.7,3,False,Sometimes,10.0,72,3.46,Beneficial
+STU_2025823,19,Female,High School,Snapchat,3.5,2.1,Laptop/PC,7.4,3,False,Rarely,20.0,88,3.11,Beneficial
+STU_2026029,21,Male,Undergraduate,TikTok,5.2,1.9,Smartphone,7.2,3,True,Always,7.0,77,3.53,Beneficial
+STU_2026531,16,Female,High School,TikTok,8.0,3.2,Smartphone,6.3,1,True,Rarely,22.0,59,3.03,Neutral
+STU_2027522,19,Female,Undergraduate,YouTube,2.8,1.8,Smartphone,7.6,3,True,Sometimes,3.0,95,3.98,Beneficial
+STU_2027601,16,Male,High School,TikTok,4.3,1.1,Smartphone,6.9,2,False,Frequently,9.0,89,3.45,Beneficial
+STU_2027386,19,Female,Undergraduate,Instagram,3.9,2.1,Smartphone,8.0,3,True,Never,1.0,96,3.84,Beneficial
+STU_2025226,17,Female,High School,YouTube,2.9,1.7,Smartphone,7.4,4,False,Sometimes,14.0,84,3.44,Beneficial
+STU_2027438,24,Female,Postgraduate,TikTok,5.6,1.0,Smartphone,7.0,3,True,Frequently,20.0,74,3.16,Beneficial
+STU_2024466,19,Female,Undergraduate,YouTube,2.8,1.5,Smartphone,6.6,4,False,Frequently,9.0,74,4.0,Beneficial
+STU_2028086,17,Female,High School,LinkedIn,6.0,2.7,Smartphone,6.8,2,True,Frequently,15.0,76,2.82,Beneficial
+STU_2027305,18,Male,Undergraduate,Snapchat,3.6,2.6,Smartphone,7.3,3,False,Sometimes,15.0,94,3.57,Beneficial
+STU_2028438,19,Male,Undergraduate,YouTube,9.6,1.4,Smartphone,6.0,2,False,Rarely,19.0,63,3.02,Neutral
+STU_2027539,17,Female,High School,Instagram,4.0,0.8,Laptop/PC,7.9,3,False,Rarely,6.0,88,3.74,Beneficial
+STU_2024351,20,Male,Undergraduate,TikTok,4.9,1.3,Smartphone,7.9,3,False,Sometimes,14.0,86,3.86,Beneficial
+STU_2025692,18,Male,Undergraduate,Snapchat,4.3,1.1,Laptop/PC,6.4,3,True,Rarely,20.0,79,3.6,Beneficial
+STU_2026315,18,Female,Undergraduate,X (Twitter),3.8,1.4,Smartphone,6.7,2,False,Sometimes,5.0,84,3.41,Beneficial
+STU_2025272,20,Female,Undergraduate,Snapchat,5.6,0.0,Smartphone,4.8,2,True,Always,13.0,82,3.13,Beneficial
+STU_2025066,19,Female,Undergraduate,LinkedIn,2.3,1.2,Smartphone,7.2,3,False,Always,5.0,98,4.0,Beneficial
+STU_2024407,18,Prefer not to say,Undergraduate,X (Twitter),2.3,1.4,Smartphone,9.3,4,True,Frequently,5.0,96,4.0,Beneficial
+STU_2025117,18,Female,Undergraduate,TikTok,9.3,0.8,Smartphone,5.3,1,True,Frequently,23.0,65,2.67,Neutral
+STU_2026679,15,Male,High School,TikTok,3.5,1.0,Smartphone,7.6,4,True,Always,8.0,88,3.74,Beneficial
+STU_2028169,19,Male,Undergraduate,Reddit,1.8,1.5,Smartphone,7.4,3,False,Sometimes,8.0,98,4.0,Beneficial
+STU_2024283,17,Female,High School,YouTube,2.3,2.6,Smartphone,7.4,3,False,Always,1.0,88,3.52,Beneficial
+STU_2024216,20,Female,Undergraduate,LinkedIn,11.8,1.7,Smartphone,4.7,1,True,Rarely,24.0,58,2.51,Neutral
+STU_2026932,18,Male,Undergraduate,Instagram,5.5,2.5,Tablet,6.4,2,True,Sometimes,17.0,80,2.78,Beneficial
+STU_2025827,19,Female,Undergraduate,Snapchat,14.0,2.1,Smartphone,3.8,1,True,Sometimes,37.0,39,2.86,Negative
+STU_2027975,21,Male,Undergraduate,Instagram,7.1,2.0,Smartphone,6.4,1,True,Frequently,17.0,75,3.36,Beneficial
+STU_2028372,15,Female,High School,Snapchat,3.9,0.5,Smartphone,7.6,3,False,Frequently,13.0,90,3.58,Beneficial
+STU_2028291,17,Female,High School,Snapchat,4.4,1.9,Smartphone,8.1,4,False,Always,6.0,92,3.39,Beneficial
+STU_2025591,19,Male,Undergraduate,TikTok,3.2,0.9,Smartphone,7.2,3,True,Frequently,9.0,92,3.83,Beneficial
+STU_2027126,20,Female,Undergraduate,Snapchat,7.6,1.5,Smartphone,6.7,2,True,Rarely,18.0,73,3.44,Beneficial
+STU_2025929,18,Female,Undergraduate,Instagram,4.3,1.0,Tablet,5.6,2,False,Sometimes,13.0,79,3.41,Beneficial
+STU_2025860,18,Female,Undergraduate,Instagram,5.2,1.9,Smartphone,6.2,1,False,Rarely,12.0,87,3.36,Beneficial
+STU_2025223,16,Female,High School,Instagram,3.0,2.0,Smartphone,7.2,2,True,Always,10.0,88,3.98,Beneficial
+STU_2026759,18,Female,Undergraduate,X (Twitter),4.2,1.3,Smartphone,6.7,2,False,Rarely,11.0,90,3.64,Beneficial
+STU_2027845,17,Female,High School,TikTok,4.0,1.7,Smartphone,8.1,3,True,Sometimes,15.0,82,3.46,Beneficial
+STU_2024503,17,Male,High School,TikTok,2.6,1.6,Smartphone,7.1,4,False,Frequently,8.0,98,3.96,Beneficial
+STU_2025965,18,Female,Undergraduate,TikTok,3.4,1.2,Laptop/PC,8.1,3,False,Sometimes,4.0,94,3.8,Beneficial
+STU_2025936,18,Female,Undergraduate,Instagram,3.1,1.3,Smartphone,7.5,2,True,Sometimes,10.0,82,3.83,Beneficial
+STU_2026771,18,Male,Undergraduate,Snapchat,3.3,0.8,Smartphone,6.8,3,False,Sometimes,11.0,82,3.49,Beneficial
+STU_2026517,23,Female,Undergraduate,Instagram,5.9,1.5,Smartphone,7.1,3,True,Rarely,19.0,76,3.52,Beneficial
+STU_2027250,16,Female,High School,Instagram,7.5,2.2,Smartphone,5.9,2,True,Rarely,16.0,78,2.81,Beneficial
+STU_2026783,15,Female,High School,Snapchat,3.7,2.2,Smartphone,9.2,4,True,Always,1.0,89,3.68,Beneficial
+STU_2026403,17,Prefer not to say,High School,X (Twitter),7.7,2.4,Smartphone,5.7,1,True,Sometimes,19.0,55,3.81,Neutral
+STU_2024209,18,Male,Undergraduate,Snapchat,5.3,2.5,Smartphone,7.4,3,True,Sometimes,13.0,83,3.77,Beneficial
+STU_2025842,21,Female,Undergraduate,TikTok,6.2,0.4,Smartphone,6.5,1,True,Sometimes,15.0,70,3.52,Beneficial
+STU_2025379,21,Female,Undergraduate,Instagram,8.1,2.0,Smartphone,6.5,2,True,Sometimes,21.0,69,2.91,Neutral
+STU_2028210,20,Female,Undergraduate,Reddit,7.9,1.1,Smartphone,5.3,1,True,Sometimes,24.0,61,2.94,Neutral
+STU_2027496,20,Female,Undergraduate,Snapchat,4.2,2.1,Smartphone,5.7,3,True,Frequently,12.0,71,3.36,Beneficial
+STU_2027187,20,Male,Undergraduate,X (Twitter),5.7,2.1,Smartphone,6.8,3,True,Never,13.0,81,3.43,Beneficial
+STU_2025092,17,Prefer not to say,High School,TikTok,4.0,1.8,Laptop/PC,6.8,2,True,Always,9.0,92,2.98,Beneficial
+STU_2024707,22,Male,Postgraduate,YouTube,5.1,2.1,Smartphone,6.4,2,True,Sometimes,14.0,81,2.91,Beneficial
+STU_2026038,16,Male,High School,Instagram,3.2,1.5,Laptop/PC,8.0,3,True,Sometimes,16.0,90,3.69,Beneficial
+STU_2027337,18,Male,Undergraduate,TikTok,3.5,0.8,Smartphone,7.8,4,False,Sometimes,16.0,96,3.69,Beneficial
+STU_2025359,21,Male,Undergraduate,Snapchat,3.1,2.1,Smartphone,6.7,3,True,Always,10.0,92,3.18,Beneficial
+STU_2024138,19,Female,Undergraduate,Instagram,4.2,1.6,Smartphone,7.6,3,False,Always,3.0,98,3.78,Beneficial
+STU_2027462,17,Female,High School,Instagram,5.3,1.5,Laptop/PC,8.1,3,True,Sometimes,16.0,88,3.4,Beneficial
+STU_2024908,19,Female,Undergraduate,Reddit,7.6,1.6,Smartphone,6.0,2,False,Rarely,26.0,62,3.17,Neutral
+STU_2024619,17,Male,High School,Instagram,4.3,1.4,Smartphone,8.1,3,False,Frequently,11.0,89,3.62,Beneficial
+STU_2027951,22,Female,Postgraduate,TikTok,4.7,0.4,Smartphone,7.4,3,False,Sometimes,15.0,82,3.24,Beneficial
+STU_2026014,18,Male,Undergraduate,TikTok,11.6,1.6,Smartphone,4.3,1,True,Always,23.0,45,2.7,Neutral
+STU_2024623,15,Female,High School,Instagram,3.4,2.9,Laptop/PC,6.8,2,False,Frequently,12.0,85,3.96,Beneficial
+STU_2024687,16,Male,High School,Instagram,8.1,1.4,Smartphone,6.0,2,False,Sometimes,18.0,69,3.25,Beneficial
+STU_2025341,18,Female,Undergraduate,Instagram,1.8,1.6,Smartphone,7.6,3,False,Sometimes,,94,3.99,Beneficial
+STU_2027443,19,Male,Undergraduate,TikTok,8.2,0.9,Smartphone,5.2,2,False,Never,26.0,74,2.99,Neutral
+STU_2027170,18,Male,Undergraduate,Reddit,3.3,2.9,Smartphone,7.0,3,False,Always,5.0,86,3.8,Beneficial
+STU_2027223,20,Female,Undergraduate,YouTube,6.7,1.6,Smartphone,6.2,1,True,Sometimes,11.0,88,3.06,Beneficial
+STU_2028149,18,Female,Undergraduate,TikTok,5.6,0.0,Smartphone,7.5,2,True,Always,9.0,94,3.55,Beneficial
+STU_2027916,16,Female,High School,Instagram,9.2,1.2,Smartphone,5.1,1,True,Never,15.0,69,3.36,Beneficial
+STU_2028035,16,Male,High School,TikTok,6.0,0.6,Smartphone,7.3,2,True,Frequently,15.0,77,,Beneficial
+STU_2026506,22,Female,Postgraduate,Instagram,3.8,1.6,Laptop/PC,8.5,3,False,Sometimes,6.0,95,3.79,Beneficial
+STU_2026085,19,Male,Undergraduate,Reddit,2.4,0.8,Laptop/PC,8.2,3,False,Sometimes,8.0,95,4.0,Beneficial
+STU_2028262,18,Female,Undergraduate,TikTok,8.6,2.1,Smartphone,5.1,1,True,Sometimes,17.0,72,2.45,Neutral
+STU_2028412,19,Male,Undergraduate,TikTok,4.0,2.8,Smartphone,7.6,3,True,Rarely,12.0,89,,Beneficial
+STU_2028398,16,Male,High School,Snapchat,3.5,0.9,Smartphone,6.5,3,False,Frequently,0.0,94,3.72,Beneficial
+STU_2027031,21,Male,Undergraduate,TikTok,3.7,1.3,Smartphone,9.0,3,False,Frequently,10.0,91,3.22,Beneficial
+STU_2025246,22,Male,Postgraduate,Instagram,5.3,2.0,Smartphone,5.8,2,True,Sometimes,9.0,80,3.14,Beneficial
+STU_2025122,15,Male,High School,Instagram,9.0,1.7,Smartphone,5.8,1,True,Frequently,14.0,65,2.82,Beneficial
+STU_2026080,16,Female,High School,Snapchat,4.6,1.6,Smartphone,7.6,3,False,Rarely,12.0,93,3.35,Beneficial
+STU_2026926,15,Male,High School,X (Twitter),4.4,2.9,Smartphone,7.6,3,False,Frequently,11.0,86,3.68,Beneficial
+STU_2027377,20,Male,Undergraduate,Instagram,6.1,2.5,Smartphone,6.7,1,True,Sometimes,23.0,82,2.9,Neutral
+STU_2028289,18,Male,Undergraduate,YouTube,2.9,1.4,Laptop/PC,8.3,4,True,Always,11.0,98,3.43,Beneficial
+STU_2027408,18,Prefer not to say,Undergraduate,YouTube,3.2,2.8,Smartphone,7.5,3,True,Always,5.0,88,3.86,Beneficial
+STU_2027224,17,Female,High School,YouTube,5.9,1.3,Smartphone,5.8,2,True,Frequently,16.0,76,2.94,Beneficial
+STU_2027873,21,Male,Undergraduate,TikTok,7.0,2.1,Smartphone,6.9,1,True,Rarely,17.0,68,3.73,Beneficial
+STU_2028411,16,Male,High School,TikTok,3.8,1.8,Smartphone,7.4,3,False,Sometimes,6.0,93,3.81,Beneficial
+STU_2025774,20,Male,Undergraduate,YouTube,7.4,1.1,Smartphone,4.9,1,True,Frequently,18.0,72,3.02,Beneficial
+STU_2026098,17,Female,High School,TikTok,3.7,1.9,Smartphone,7.1,3,True,Always,7.0,95,3.93,Beneficial
+STU_2026305,20,Female,Undergraduate,LinkedIn,2.6,1.6,Smartphone,7.6,4,True,Rarely,5.0,89,3.73,Beneficial
+STU_2028440,21,Male,Undergraduate,Reddit,11.2,2.0,Smartphone,4.8,1,True,Sometimes,25.0,54,2.41,Negative
+STU_2026807,17,Male,High School,Snapchat,2.8,2.4,Laptop/PC,7.2,4,False,Frequently,14.0,84,3.64,Beneficial
+STU_2024843,21,Female,Undergraduate,Instagram,5.4,0.8,Smartphone,5.7,1,True,Sometimes,15.0,84,3.61,Beneficial
+STU_2024624,19,Female,Undergraduate,Snapchat,6.0,2.7,Tablet,5.7,2,True,Sometimes,16.0,70,3.38,Beneficial
+STU_2026309,17,Male,High School,TikTok,3.1,2.5,Smartphone,7.5,2,False,Frequently,10.0,92,3.79,Beneficial
+STU_2026692,18,Female,Undergraduate,YouTube,6.5,2.5,Laptop/PC,7.0,3,True,Always,14.0,82,3.55,Beneficial
+STU_2024224,17,Male,High School,X (Twitter),2.1,1.4,Smartphone,7.1,3,False,Always,9.0,98,3.53,Beneficial
+STU_2026308,20,Male,Undergraduate,TikTok,4.7,0.3,Smartphone,8.2,3,False,Sometimes,2.0,90,3.82,Beneficial
+STU_2024325,21,Female,High School,Instagram,5.0,2.9,Smartphone,7.1,3,False,Sometimes,13.0,81,4.0,Beneficial
+STU_2025720,15,Male,High School,YouTube,2.7,1.9,Laptop/PC,7.1,3,False,Always,9.0,76,4.0,Beneficial
+STU_2025709,16,Female,High School,TikTok,5.4,1.4,Smartphone,6.2,2,True,Never,17.0,85,3.83,Beneficial
+STU_2024726,21,Female,Undergraduate,Snapchat,6.0,1.7,Smartphone,5.1,2,True,Always,18.0,71,3.4,Beneficial
+STU_2026676,19,Male,Undergraduate,Instagram,4.1,0.9,Smartphone,6.9,4,False,Never,10.0,84,3.7,Beneficial
+STU_2025368,17,Male,High School,Reddit,6.9,1.5,Smartphone,6.7,1,True,Frequently,16.0,74,3.33,Beneficial
+STU_2024285,17,Male,High School,Instagram,5.7,2.0,Smartphone,6.5,2,True,Never,18.0,84,3.06,Beneficial
+STU_2025892,24,Female,Postgraduate,TikTok,4.1,1.5,Smartphone,7.2,3,True,Rarely,18.0,84,3.71,Beneficial
+STU_2028038,17,Female,High School,X (Twitter),3.2,1.8,Smartphone,7.7,3,True,Sometimes,13.0,87,3.88,Beneficial
+STU_2024109,17,Male,High School,TikTok,2.0,2.1,Smartphone,7.7,3,False,Frequently,10.0,93,4.0,Beneficial
+STU_2024172,20,Female,Undergraduate,Instagram,7.4,2.4,Tablet,6.1,1,True,Sometimes,8.0,78,3.3,Beneficial
+STU_2024778,19,Female,Undergraduate,YouTube,8.7,2.0,Tablet,7.2,3,False,Never,15.0,79,3.54,Beneficial
+STU_2028380,18,Female,High School,TikTok,4.7,2.2,Smartphone,6.7,3,False,Frequently,14.0,70,,Beneficial
+STU_2025663,20,Female,High School,TikTok,5.1,2.5,Laptop/PC,7.8,3,True,Sometimes,10.0,84,3.16,Beneficial
+STU_2025138,18,Male,High School,Snapchat,3.2,2.9,Laptop/PC,7.3,4,True,Rarely,10.0,98,3.36,Beneficial
+STU_2025498,15,Female,High School,Instagram,4.8,2.3,Smartphone,5.9,3,True,Sometimes,14.0,81,2.71,Beneficial
+STU_2028084,16,Female,High School,Instagram,14.0,0.9,Tablet,4.6,1,True,Never,35.0,39,1.9,Negative
+STU_2025621,20,Male,Undergraduate,Instagram,12.8,1.4,Smartphone,3.4,1,True,Sometimes,35.0,39,2.47,Negative
+STU_2026358,19,Male,Undergraduate,Snapchat,10.8,1.4,Smartphone,5.2,1,False,Rarely,29.0,55,3.1,Neutral
+STU_2024629,18,Female,Undergraduate,Snapchat,5.4,1.4,Smartphone,6.6,2,True,Rarely,16.0,71,3.6,Beneficial
+STU_2024748,17,Prefer not to say,High School,YouTube,3.3,2.0,Tablet,7.3,3,False,Always,3.0,92,3.72,Beneficial
+STU_2026130,19,Female,Undergraduate,Instagram,7.1,1.8,Smartphone,5.4,1,True,Sometimes,15.0,74,3.36,Beneficial
+STU_2027136,18,Female,Undergraduate,TikTok,4.7,2.1,Smartphone,6.7,2,False,Sometimes,13.0,87,3.29,Beneficial
+STU_2028082,18,Female,Undergraduate,Instagram,2.1,1.9,Tablet,7.1,3,False,Sometimes,4.0,84,3.98,Beneficial
+STU_2025984,18,Female,Undergraduate,Instagram,4.4,1.3,Smartphone,7.7,3,False,Rarely,3.0,86,3.29,Beneficial
+STU_2026657,18,Male,Undergraduate,Instagram,3.0,0.9,Smartphone,6.9,4,True,Frequently,8.0,96,3.56,Beneficial
+STU_2025825,18,Male,Undergraduate,TikTok,3.8,1.1,Smartphone,6.7,3,False,Sometimes,10.0,92,3.17,Beneficial
+STU_2027162,18,Female,Undergraduate,TikTok,3.1,2.6,Smartphone,7.8,4,False,Frequently,8.0,92,3.8,Beneficial
+STU_2028232,19,Male,Undergraduate,Instagram,6.3,1.3,Smartphone,4.7,2,True,Always,17.0,75,,Beneficial
+STU_2024807,18,Female,Undergraduate,Instagram,3.0,1.6,Smartphone,7.3,3,False,Sometimes,14.0,86,3.96,Beneficial
+STU_2026774,16,Female,High School,Instagram,13.2,3.4,Smartphone,3.5,1,True,Frequently,28.0,44,2.57,Negative
+STU_2028455,18,Female,Undergraduate,Snapchat,3.2,2.3,Smartphone,7.2,3,True,Sometimes,7.0,90,3.79,Beneficial
+STU_2024609,18,Female,Undergraduate,Instagram,4.5,2.5,Smartphone,6.8,2,False,Frequently,10.0,81,3.58,Beneficial
+STU_2026962,22,Female,Undergraduate,TikTok,5.4,1.9,Smartphone,6.6,2,True,Rarely,10.0,86,3.27,Beneficial
+STU_2027092,18,Male,Undergraduate,Instagram,3.3,0.6,Laptop/PC,7.6,3,False,Sometimes,10.0,90,3.55,Beneficial
+STU_2024168,19,Male,Undergraduate,TikTok,5.2,2.5,Laptop/PC,5.9,2,False,Always,16.0,85,3.68,Beneficial
+STU_2026389,19,Male,High School,Instagram,4.7,2.5,Smartphone,5.7,1,True,Sometimes,12.0,76,3.4,Beneficial
+STU_2027421,18,Female,Undergraduate,Reddit,7.7,2.8,Smartphone,5.4,1,True,Sometimes,11.0,69,3.13,Beneficial
+STU_2026114,20,Male,High School,Instagram,6.0,2.7,Smartphone,3.7,1,True,Rarely,16.0,70,2.77,Neutral
+STU_2026478,18,Female,Undergraduate,Instagram,4.4,1.9,Smartphone,7.9,2,True,Rarely,9.0,82,3.55,Beneficial
+STU_2028015,20,Male,Undergraduate,Snapchat,5.7,1.5,Smartphone,5.3,1,True,Sometimes,12.0,72,3.14,Beneficial
+STU_2025177,21,Male,Undergraduate,Instagram,9.1,1.4,Smartphone,5.6,1,True,Frequently,21.0,64,2.55,Neutral
+STU_2026239,19,Male,Undergraduate,TikTok,11.5,2.5,Laptop/PC,5.0,1,True,Rarely,32.0,41,2.8,Negative
+STU_2028057,19,Male,Undergraduate,TikTok,2.8,0.8,Smartphone,6.4,2,False,Always,14.0,98,3.51,Beneficial
+STU_2026392,18,Male,High School,YouTube,9.0,1.0,Laptop/PC,4.7,1,True,Rarely,20.0,60,3.16,Neutral
+STU_2025037,21,Female,Undergraduate,Snapchat,3.5,1.4,Smartphone,6.7,3,False,Frequently,6.0,76,3.7,Beneficial
+STU_2024531,20,Female,High School,Instagram,4.3,3.0,Smartphone,7.9,3,False,Sometimes,11.0,83,3.46,Beneficial
+STU_2025006,25,Female,Postgraduate,Instagram,3.4,1.9,Smartphone,8.5,4,False,Sometimes,9.0,97,4.0,Beneficial
+STU_2025215,19,Non-Binary,Undergraduate,YouTube,3.7,0.5,Smartphone,8.1,3,True,Frequently,7.0,91,3.29,Beneficial
+STU_2025535,19,Male,Undergraduate,TikTok,10.5,1.2,Smartphone,4.8,1,True,Sometimes,29.0,48,3.28,Neutral
+STU_2025757,24,Male,Postgraduate,TikTok,6.7,1.8,Smartphone,4.5,1,True,Rarely,20.0,60,2.9,Neutral
+STU_2025298,17,Female,High School,YouTube,7.8,1.7,Smartphone,6.0,1,True,Sometimes,30.0,67,2.45,Neutral
+STU_2026741,17,Female,High School,Instagram,4.0,2.1,Smartphone,7.2,3,False,Never,9.0,93,3.32,Beneficial
+STU_2027554,16,Male,High School,TikTok,9.6,1.1,Smartphone,5.7,1,True,Frequently,17.0,62,3.17,Neutral
+STU_2024299,20,Male,Undergraduate,TikTok,1.7,2.0,Smartphone,7.6,2,True,Sometimes,10.0,93,3.45,Beneficial
+STU_2024173,21,Male,Undergraduate,Instagram,7.8,2.4,Smartphone,5.7,2,True,Always,22.0,65,3.22,Neutral
+STU_2025560,21,Male,Undergraduate,TikTok,3.4,1.9,Smartphone,7.2,3,False,Always,0.0,80,3.36,Beneficial
+STU_2028466,20,Female,Undergraduate,TikTok,3.2,1.9,Smartphone,7.3,3,False,Frequently,4.0,90,3.33,Beneficial
+STU_2027724,18,Male,High School,Snapchat,5.4,2.2,Smartphone,5.8,2,True,Never,18.0,77,3.45,Beneficial
+STU_2026897,17,Female,High School,Snapchat,2.5,1.6,Smartphone,8.4,3,False,Never,14.0,88,3.57,Beneficial
+STU_2026511,18,Female,Undergraduate,Instagram,4.8,2.6,Laptop/PC,6.8,2,False,Sometimes,9.0,78,3.69,Beneficial
