@@ -64,7 +64,7 @@ effect-of-social-media/
 ### 1. Installation
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/your-username/effect-of-social-media.git
+git clone https://github.com/fauzinoorsyabani/effect-of-social-media.git
 cd effect-of-social-media
 pip install -r requirements.txt
 ```
