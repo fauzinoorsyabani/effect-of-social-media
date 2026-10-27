@@ -9,7 +9,7 @@ nb = nbf.v4.new_notebook()
 cells = []
 
 # Cell 1: Markdown Title
-cells.append(nbf.v4.new_markdown_cell("""# 📱 Impact of Social Media on Student Life & Academic Performance
+cells.append(nbf.v4.new_markdown_cell("""# Impact of Social Media on Student Life & Academic Performance
 ## Comprehensive Exploratory Data Analysis & Statistical Investigation
 
 ### 1. Overview & Research Objectives

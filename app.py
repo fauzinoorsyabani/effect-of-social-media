@@ -17,7 +17,6 @@ import streamlit as st
 # Configure Page
 st.set_page_config(
     page_title="Impact of Social Media on Student Life & Wellbeing",
-    page_icon="📱",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -145,7 +144,7 @@ except Exception as e:
     st.stop()
 
 # Header
-st.title("📱 Social Media & Student Wellbeing Platform")
+st.title("Social Media & Student Wellbeing Platform")
 st.markdown(
     "**End-to-End Analytics, Behavioral Archetyping & Predictive Simulation Engine**"
 )
@@ -153,9 +152,9 @@ st.markdown(
 # Tabs Navigation
 tab_eda, tab_sim, tab_models = st.tabs(
     [
-        "📊 Population Insights & EDA",
-        "🎯 Digital Wellbeing & GPA Simulator",
-        "🧠 Machine Learning & Explainability",
+        "Population Insights & EDA",
+        "Digital Wellbeing & GPA Simulator",
+        "Machine Learning & Explainability",
     ]
 )
 
@@ -163,10 +162,10 @@ tab_eda, tab_sim, tab_models = st.tabs(
 # TAB 1: POPULATION INSIGHTS & EDA
 # ==========================================================
 with tab_eda:
-    st.markdown("### 🔍 Dataset Cohort Explorer")
+    st.markdown("### Dataset Cohort Explorer")
 
     # Filters in Sidebar / Expander
-    with st.expander("🎛️ Filter Cohort Segment", expanded=True):
+    with st.expander("Filter Cohort Segment", expanded=True):
         col_f1, col_f2, col_f3, col_f4 = st.columns(4)
         with col_f1:
             sel_academic = st.multiselect(
@@ -360,7 +359,7 @@ with tab_eda:
 # TAB 2: DIGITAL WELLBEING & GPA SIMULATOR
 # ==========================================================
 with tab_sim:
-    st.markdown("### 🎮 Real-Time Lifestyle Simulator & AI Prediction Engine")
+    st.markdown("### Real-Time Lifestyle Simulator & AI Prediction Engine")
     st.write(
         "Adjust student digital habits, bedtime practices, and platform choices to see live predictions for GPA, mental wellbeing, and behavioral archetype persona."
     )
@@ -368,7 +367,7 @@ with tab_sim:
     sim_col1, sim_col2 = st.columns([1, 1.3])
 
     with sim_col1:
-        st.markdown("#### ⚙️ Input Student Behavioral Profile")
+        st.markdown("#### Input Student Behavioral Profile")
 
         s_age = st.slider("Student Age", min_value=15, max_value=26, value=20)
         s_gender = st.selectbox(
@@ -434,7 +433,7 @@ with tab_sim:
 
     # Compute Predictions
     with sim_col2:
-        st.markdown("#### 🔮 Machine Learning Prediction Results")
+        st.markdown("#### Machine Learning Prediction Results")
 
         # Synthesize single row DataFrame matching training schema
         input_data = pd.DataFrame(
@@ -580,7 +579,7 @@ with tab_sim:
         st.plotly_chart(fig_prob, use_container_width=True)
 
         # Tailored Lifestyle Recommendations
-        st.markdown("#### 💡 Tailored Actionable Guidance")
+        st.markdown("#### Tailored Actionable Guidance")
         if s_daily > 6.0 or s_sleep_dur < 6.5 or s_late_night:
             st.warning(
                 """
@@ -602,12 +601,12 @@ with tab_sim:
 # TAB 3: MACHINE LEARNING & EXPLAINABILITY
 # ==========================================================
 with tab_models:
-    st.markdown("### 🧠 Model Performance Benchmarks & Feature Attribution")
+    st.markdown("### Model Performance Benchmarks & Feature Attribution")
 
     sub_c1, sub_c2 = st.columns(2)
 
     with sub_c1:
-        st.markdown("#### 🏆 Overall Impact Classifier Benchmark")
+        st.markdown("#### Overall Impact Classifier Benchmark")
         clf_metrics = artifacts["classifier_metrics"]["models"]
         bench_rows = []
         for m_name, m_data in clf_metrics.items():
@@ -638,7 +637,7 @@ with tab_models:
         st.plotly_chart(fig_cm, use_container_width=True)
 
     with sub_c2:
-        st.markdown("#### 📈 Continuous Regression Models Benchmark")
+        st.markdown("#### Continuous Regression Models Benchmark")
         gpa_metrics = artifacts["reg_gpa_metrics"]["models"]
         reg_rows = []
         for m_name, m_data in gpa_metrics.items():
@@ -673,7 +672,7 @@ with tab_models:
         st.plotly_chart(fig_imp, use_container_width=True)
 
     st.write("---")
-    st.markdown("#### 🗺️ PCA 2D Clustering Space & Digital Phenotype Segmentation")
+    st.markdown("#### PCA 2D Clustering Space & Digital Phenotype Segmentation")
 
     # PCA 2D Scatter for the cohort
     kmeans = artifacts["kmeans"]
