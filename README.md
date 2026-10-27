@@ -69,12 +69,17 @@ cd effect-of-social-media
 pip install -r requirements.txt
 ```
 
-### 2. Run the Interactive Streamlit Web App
-Launch the interactive dashboard and real-time simulator:
+### 2. Run the Modern Web Dashboard (HTML5 + Tailwind + FastAPI/Starlette)
+Launch the modern, responsive web application (zero emojis, fluid live sliders, dark glassmorphism):
 ```bash
-streamlit run app.py
+python server.py
 ```
-Open your browser at `http://localhost:8501`.
+Open your browser at **`http://localhost:8000`**.
+
+*(Optional)* You can also run the Streamlit version:
+```bash
+python -m streamlit run app.py
+```
 
 ### 3. Run Automated Tests
 ```bash
