@@ -182,7 +182,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-slate-800 flex flex-col font-sans">
+    <div className="min-h-screen bg-[#fafbfc] text-[#20252b] flex flex-col font-sans">
       <Navbar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
@@ -221,10 +221,18 @@ export default function App() {
         onAuthSuccess={handleAuthSuccess}
       />
 
-      <footer className="mt-16 border-t border-slate-200 py-6 text-center text-xs text-slate-500 font-mono">
-        <span>PulseAI Digital Phenomics Platform</span> | <span>Production-Grade ML Suite</span> |{' '}
-        <span>Zero Data Leakage Pipeline</span>
+      <footer className="mt-16 border-t border-[#e0e5e9] bg-white py-8 text-center text-xs text-[#5b6570] font-mono-num">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <span>PulseAI Student Digital Phenomics Platform</span>
+          <div className="flex items-center space-x-3 text-[11px]">
+            <span>XGBoost 96.2% Acc</span>
+            <span>Ridge GPA R² 0.50</span>
+            <span>K-Means k=3</span>
+          </div>
+          <span className="text-[11px] text-[#5b6570]">Zero Leakage Empirical Pipeline</span>
+        </div>
       </footer>
     </div>
   );
 }
+

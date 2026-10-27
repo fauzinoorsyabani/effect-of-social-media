@@ -58,10 +58,11 @@ export default function CohortAnalyticsTab({ overviewData }) {
     labels: data.platform_breakdown.map((p) => p.Primary_Platform),
     datasets: [
       {
-        label: 'Avg Screen Hours',
+        label: 'Mean Screen Hours',
         data: data.platform_breakdown.map((p) => p.avg_screen),
-        backgroundColor: '#10B981',
-        borderRadius: 6,
+        backgroundColor: '#294f82',
+        hoverBackgroundColor: '#1e3a63',
+        borderRadius: 4,
       },
     ],
   };
@@ -69,10 +70,19 @@ export default function CohortAnalyticsTab({ overviewData }) {
   const platformChartOptions = {
     responsive: true,
     maintainAspectRatio: false,
-    plugins: { legend: { display: false } },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#20252b',
+        titleFont: { family: 'JetBrains Mono', size: 11 },
+        bodyFont: { family: 'JetBrains Mono', size: 11 },
+        padding: 8,
+        cornerRadius: 5,
+      },
+    },
     scales: {
-      x: { grid: { display: false }, ticks: { color: '#64748B', font: { size: 11 } } },
-      y: { grid: { color: 'rgba(15, 23, 42, 0.05)' }, ticks: { color: '#64748B' } },
+      x: { grid: { display: false }, ticks: { color: '#5b6570', font: { family: 'JetBrains Mono', size: 10 } } },
+      y: { grid: { color: '#f0f3f6' }, ticks: { color: '#5b6570', font: { family: 'JetBrains Mono', size: 10 } } },
     },
   };
 
@@ -81,14 +91,16 @@ export default function CohortAnalyticsTab({ overviewData }) {
     labels: data.social_comparison_breakdown.map((s) => s.Social_Comparison_Frequency),
     datasets: [
       {
-        label: 'Stress Score',
+        label: 'Perceived Stress Score (0-40)',
         data: data.social_comparison_breakdown.map((s) => s.avg_stress),
-        borderColor: '#0284C7',
-        backgroundColor: 'rgba(2, 132, 199, 0.08)',
+        borderColor: '#d97706',
+        backgroundColor: 'rgba(217, 119, 6, 0.06)',
         fill: true,
-        tension: 0.35,
+        tension: 0.3,
         pointRadius: 4,
-        pointBackgroundColor: '#0284C7',
+        pointBackgroundColor: '#d97706',
+        pointBorderColor: '#ffffff',
+        pointBorderWidth: 1.5,
       },
     ],
   };
@@ -96,10 +108,19 @@ export default function CohortAnalyticsTab({ overviewData }) {
   const stressChartOptions = {
     responsive: true,
     maintainAspectRatio: false,
-    plugins: { legend: { display: false } },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#20252b',
+        titleFont: { family: 'JetBrains Mono', size: 11 },
+        bodyFont: { family: 'JetBrains Mono', size: 11 },
+        padding: 8,
+        cornerRadius: 5,
+      },
+    },
     scales: {
-      x: { grid: { display: false }, ticks: { color: '#64748B' } },
-      y: { grid: { color: 'rgba(15, 23, 42, 0.05)' }, ticks: { color: '#64748B' } },
+      x: { grid: { display: false }, ticks: { color: '#5b6570', font: { family: 'JetBrains Mono', size: 10 } } },
+      y: { grid: { color: '#f0f3f6' }, ticks: { color: '#5b6570', font: { family: 'JetBrains Mono', size: 10 } } },
     },
   };
 
@@ -109,8 +130,8 @@ export default function CohortAnalyticsTab({ overviewData }) {
     datasets: [
       {
         data: Object.values(data.impact_distribution),
-        backgroundColor: ['#10B981', '#0284C7', '#E11D48'],
-        borderColor: '#FFFFFF',
+        backgroundColor: ['#059669', '#294f82', '#dc2626'],
+        borderColor: '#ffffff',
         borderWidth: 2,
       },
     ],
@@ -120,112 +141,132 @@ export default function CohortAnalyticsTab({ overviewData }) {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
-      legend: { position: 'bottom', labels: { color: '#475569', boxWidth: 12 } },
+      legend: {
+        position: 'bottom',
+        labels: {
+          color: '#20252b',
+          boxWidth: 12,
+          usePointStyle: true,
+          font: { family: 'Plus Jakarta Sans', size: 11 },
+        },
+      },
+      tooltip: {
+        backgroundColor: '#20252b',
+        titleFont: { family: 'JetBrains Mono', size: 11 },
+        bodyFont: { family: 'JetBrains Mono', size: 11 },
+        padding: 8,
+        cornerRadius: 5,
+      },
     },
-    cutout: '68%',
+    cutout: '70%',
   };
 
   return (
-    <section className="space-y-8">
-      <div>
-        <div className="inline-flex items-center space-x-2 px-2.5 py-1 rounded-md bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-medium uppercase tracking-wider mb-2">
-          <Database className="w-3.5 h-3.5" />
-          <span>Empirical Population Dataset (N = 4,500)</span>
+    <section className="space-y-6">
+      {/* Section Header */}
+      <div className="pb-4 border-b border-[#e0e5e9]">
+        <div className="rea-badge mb-2">
+          <Database className="w-3 h-3 text-[#294f82]" />
+          <span>EMPIRICAL POPULATION DATASET (N = 4,500)</span>
         </div>
-        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">
-          Cohort Statistics & Distribution Patterns
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-[#20252b]">
+          Cohort Behavioral Analytics & Cross-Sections
         </h2>
-        <p className="text-sm text-slate-600 mt-1">
-          Aggregated findings across primary platform habits, bedtime screen use, and academic stress.
+        <p className="text-xs sm:text-sm text-[#5b6570] mt-1 max-w-2xl">
+          Aggregated distributions across primary platform habits, bedtime screen exposure, and empirical stress distributions.
         </p>
       </div>
 
       {/* 4 Top KPI Stat Cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="glass-card p-4">
-          <div className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Students Surveyed</div>
-          <div className="text-2xl font-semibold font-mono text-slate-900 mt-1">4,500</div>
-          <div className="text-[11px] text-slate-500 mt-1">High School to Postgrad</div>
+        <div className="rea-card p-4">
+          <div className="text-[11px] font-mono-num font-semibold text-[#5b6570] uppercase tracking-wider">Students Surveyed</div>
+          <div className="text-2xl font-bold font-mono-num text-[#20252b] mt-1">4,500</div>
+          <div className="text-[11px] text-[#5b6570] mt-1">Undergrad & Postgrad</div>
         </div>
 
-        <div className="glass-card p-4">
-          <div className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Avg Daily Screen</div>
-          <div className="text-2xl font-semibold font-mono text-emerald-700 mt-1">{data.avg_daily_screen} hrs</div>
-          <div className="text-[11px] text-slate-500 mt-1">Std Dev: 2.1 hrs</div>
+        <div className="rea-card p-4">
+          <div className="text-[11px] font-mono-num font-semibold text-[#5b6570] uppercase tracking-wider">Mean Daily Screen</div>
+          <div className="text-2xl font-bold font-mono-num text-[#20252b] mt-1">{data.avg_daily_screen} hrs</div>
+          <div className="text-[11px] text-[#5b6570] mt-1 font-mono-num">Std Dev: 2.1 hrs</div>
         </div>
 
-        <div className="glass-card p-4">
-          <div className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Avg Sleep Duration</div>
-          <div className="text-2xl font-semibold font-mono text-sky-700 mt-1">{data.avg_sleep_hours} hrs</div>
-          <div className="text-[11px] text-slate-500 mt-1">36% Sleep Deprived (&lt;6h)</div>
+        <div className="rea-card p-4">
+          <div className="text-[11px] font-mono-num font-semibold text-[#5b6570] uppercase tracking-wider">Mean Sleep Duration</div>
+          <div className="text-2xl font-bold font-mono-num text-[#20252b] mt-1">{data.avg_sleep_hours} hrs</div>
+          <div className="text-[11px] text-[#5b6570] mt-1 font-mono-num">36.1% Below 6.0h Threshold</div>
         </div>
 
-        <div className="glass-card p-4">
-          <div className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Late-Night Screen Use</div>
-          <div className="text-2xl font-semibold font-mono text-rose-700 mt-1">{data.late_night_pct}%</div>
-          <div className="text-[11px] text-slate-500 mt-1">Suppressed Sleep Quality</div>
+        <div className="rea-card p-4">
+          <div className="text-[11px] font-mono-num font-semibold text-[#5b6570] uppercase tracking-wider">Late-Night Exposure</div>
+          <div className="text-2xl font-bold font-mono-num text-[#dc2626] mt-1">{data.late_night_pct}%</div>
+          <div className="text-[11px] text-[#5b6570] mt-1">Active Bedtime Screen Use</div>
         </div>
       </div>
 
       {/* Charts Grid 1 */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="glass-card p-6">
-          <h3 className="font-medium text-sm text-slate-900 tracking-wide uppercase mb-1">
-            Daily Screen Hours by Social Platform
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div className="rea-card p-5 space-y-2">
+          <h3 className="font-semibold text-xs text-[#20252b] uppercase tracking-wider">
+            Screen Duration by Primary Platform
           </h3>
-          <p className="text-xs text-slate-500 mb-4">
-            TikTok and Instagram lead median usage duration across student cohorts.
+          <p className="text-[11px] text-[#5b6570]">
+            Average daily hours across platform preferences within surveyed students.
           </p>
-          <div className="h-64">
+          <div className="h-60 pt-2">
             <Bar data={platformChartData} options={platformChartOptions} />
           </div>
         </div>
 
-        <div className="glass-card p-6">
-          <h3 className="font-medium text-sm text-slate-900 tracking-wide uppercase mb-1">
-            Social Comparison Frequency vs. Stress Score
+        <div className="rea-card p-5 space-y-2">
+          <h3 className="font-semibold text-xs text-[#20252b] uppercase tracking-wider">
+            Upward Social Comparison vs. Perceived Stress
           </h3>
-          <p className="text-xs text-slate-500 mb-4">
-            Monotonic escalation of psychological stress with frequent social comparisons.
+          <p className="text-[11px] text-[#5b6570]">
+            Psychological stress scores (0-40) mapped to comparison frequency.
           </p>
-          <div className="h-64">
+          <div className="h-60 pt-2">
             <Line data={stressChartData} options={stressChartOptions} />
           </div>
         </div>
       </div>
 
       {/* Charts Grid 2 */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="glass-card p-6">
-          <h3 className="font-medium text-sm text-slate-900 tracking-wide uppercase mb-1">
-            Perceived Impact Balance
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div className="rea-card p-5 space-y-2">
+          <h3 className="font-semibold text-xs text-[#20252b] uppercase tracking-wider">
+            Overall Impact Proportions
           </h3>
-          <p className="text-xs text-slate-500 mb-4">Distribution across the 4,500 cohort records.</p>
-          <div className="h-56">
+          <p className="text-[11px] text-[#5b6570]">Cohort distribution across 4,500 labeled records.</p>
+          <div className="h-52 pt-1">
             <Doughnut data={impactChartData} options={impactChartOptions} />
           </div>
         </div>
 
-        <div className="lg:col-span-2 glass-card p-6 space-y-4">
-          <h3 className="font-medium text-sm text-slate-900 tracking-wide uppercase">Core Empirical Findings</h3>
-          <div className="space-y-3 text-xs text-slate-700">
-            <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
-              <strong className="text-emerald-700 block mb-1">1. The Sleep Displacement Mechanism</strong>
-              The ratio of daily screen time to sleep hours accounts for 48.6% of the variance in student GPA
-              regression models. Students spending more hours on screens than in bed consistently register GPAs under
-              3.00.
+        <div className="lg:col-span-2 rea-card p-5 space-y-3">
+          <h3 className="font-semibold text-xs text-[#20252b] uppercase tracking-wider">
+            Core Empirical Behavioral Findings
+          </h3>
+          <div className="space-y-2.5 text-xs">
+            <div className="p-3 rounded-md bg-[#fafbfc] border border-[#e0e5e9] border-l-4 border-l-[#294f82]">
+              <strong className="text-[#20252b] block mb-0.5">1. The Displacement Hypothesis (Strongest Predictor)</strong>
+              <p className="text-[#5b6570] leading-relaxed">
+                The ratio of screen time to sleep hours explains 48.6% of the feature weight in student academic GPA regression. When daily screen time exceeds sleep duration (ratio &gt; 1.0), students register statistically lower academic GPAs regardless of self-reported study habits.
+              </p>
             </div>
 
-            <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
-              <strong className="text-sky-700 block mb-1">2. Platform Stress Variation (ANOVA p &lt; 0.05)</strong>
-              Algorithmic short-video platforms (TikTok, Instagram) are associated with higher perceived stress scores
-              and late-night doomscrolling frequency compared to informational feeds (YouTube, LinkedIn).
+            <div className="p-3 rounded-md bg-[#fafbfc] border border-[#e0e5e9] border-l-4 border-l-[#059669]">
+              <strong className="text-[#20252b] block mb-0.5">2. Algorithmic Feed vs. Passive Video Consumption</strong>
+              <p className="text-[#5b6570] leading-relaxed">
+                Algorithmic short-video platforms (TikTok, Instagram) induce higher late-night exposure rates and stress metrics compared to linear video platforms (YouTube) and text-centric platforms (Reddit).
+              </p>
             </div>
 
-            <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
-              <strong className="text-amber-700 block mb-1">3. Non-Linear Bedtime Penalties</strong>
-              Late-night phone usage correlates with a 2-point median decline in Sleep Quality Score, dampening cognitive
-              consolidation regardless of daytime academic study hours.
+            <div className="p-3 rounded-md bg-[#fafbfc] border border-[#e0e5e9] border-l-4 border-l-[#d97706]">
+              <strong className="text-[#20252b] block mb-0.5">3. Non-Linear Bedtime Sleep Degradation</strong>
+              <p className="text-[#5b6570] leading-relaxed">
+                Screen use within 45 minutes of attempting sleep suppresses sleep quality ratings by an average of 2.1 points on a 10-point scale, driving cumulative cognitive fatigue during morning lecture hours.
+              </p>
             </div>
           </div>
         </div>

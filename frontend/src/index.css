@@ -2,89 +2,118 @@
 @import "tailwindcss";
 
 :root {
-  --bg-primary: #F8FAFC;
-  --bg-surface: #FFFFFF;
-  --bg-card: #FFFFFF;
-  --border-subtle: #E2E8F0;
-  --border-strong: #CBD5E1;
-  --color-sage: #10B981;
-  --color-sage-deep: #059669;
-  --color-sky: #0284C7;
-  --text-main: #0F172A;
-  --text-body: #334155;
-  --text-muted: #64748B;
+  color-scheme: light;
+  --ink: #20252b;
+  --muted: #5b6570;
+  --line: #e0e5e9;
+  --line-strong: #cbd5e1;
+  --soft: #f4f6f8;
+  --soft-hover: #e9ecef;
+  --accent: #294f82;
+  --accent-hover: #1e3a63;
+  --accent-soft: #eef3f9;
+  --emerald: #059669;
+  --emerald-soft: #ecfdf5;
+  --emerald-line: #a7f3d0;
+  --amber: #d97706;
+  --amber-soft: #fffbeb;
+  --amber-line: #fde68a;
+  --rose: #dc2626;
+  --rose-soft: #fef2f2;
+  --rose-line: #fecaca;
+  --page: #ffffff;
 }
 
 body {
   margin: 0;
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #F8FAFC;
-  color: #334155;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #fafbfc;
+  color: var(--ink);
   min-height: 100vh;
   line-height: 1.6;
-  background-image: 
-    radial-gradient(circle at 10% 12%, rgba(16, 185, 129, 0.04) 0%, transparent 40%),
-    radial-gradient(circle at 90% 88%, rgba(2, 132, 199, 0.04) 0%, transparent 40%);
-  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.glass-card {
-  background: #FFFFFF;
-  border: 1px solid #E2E8F0;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+/* REA-grade Clean Technical Card */
+.rea-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.glass-card:hover {
-  border-color: #CBD5E1;
-  box-shadow: 0 10px 28px -4px rgba(15, 23, 42, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
+.rea-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.04);
 }
 
-/* Custom Range Sliders */
+/* Technical Range Sliders */
 input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
-  height: 6px;
-  background: #E2E8F0;
+  height: 5px;
+  background: var(--line);
   border-radius: 999px;
   outline: none;
+  transition: background 0.15s ease;
+}
+
+input[type="range"]:hover {
+  background: #cbd5e1;
 }
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background: #10B981;
+  background: var(--accent);
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.4);
-  border: 2px solid #FFFFFF;
-  transition: transform 0.1s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+  transition: transform 0.1s ease, background-color 0.15s ease;
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
   transform: scale(1.15);
-  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.6);
+  background: var(--accent-hover);
 }
 
 /* Gauge Progress Track */
 .gauge-track {
-  background: #F1F5F9;
-  border: 1px solid #E2E8F0;
+  background: var(--soft);
+  border: 1px solid var(--line);
   border-radius: 999px;
   overflow: hidden;
-  height: 8px;
+  height: 7px;
 }
 
 .gauge-fill {
   height: 100%;
   border-radius: 999px;
-  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s ease;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
 }
 
-/* Monospace Metrics */
-.metric-mono {
+/* Monospace Numbers and Code */
+.font-mono-num {
+  font-family: 'JetBrains Mono', "SFMono-Regular", Consolas, monospace;
+  font-feature-settings: "tnum" 1, "zero" 1;
+}
+
+/* Technical Badge */
+.rea-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.25;
+  border: 1px solid var(--line);
+  background: var(--soft);
+  color: var(--muted);
   font-family: 'JetBrains Mono', monospace;
-  letter-spacing: -0.5px;
 }
