@@ -6,6 +6,8 @@ Features:
 - Dual-Mode Persistence (Device-First Local Storage & Cloud Sync API)
 - Zero-Emoji Restorative Cognitive Architecture
 """
+import os
+import tempfile
 from pathlib import Path
 import json
 import logging
@@ -35,7 +37,12 @@ logger = logging.getLogger(__name__)
 
 BASE_DIR = Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "static"
-DB_PATH = DATA_DIR / "wellness_tracker.db"
+
+if os.environ.get("VERCEL"):
+    DB_PATH = Path(tempfile.gettempdir()) / "wellness_tracker.db"
+else:
+    DB_PATH = DATA_DIR / "wellness_tracker.db"
+
 
 # Global Model & Preprocessor Cache
 MODELS = {}
