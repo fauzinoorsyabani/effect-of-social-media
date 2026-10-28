@@ -1,4 +1,4 @@
-"""PulseAI Application Entry Point for Hugging Face Spaces (Gradio SDK).
+"""PulseAI Application Entry Point for Hugging Face Spaces (Gradio SDK / ZeroGPU).
 
 This entry point connects the Starlette ASGI production platform (serving the
 minimalist React SPA, REST endpoints, and ML inference pipeline) with
@@ -8,25 +8,28 @@ import os
 import uvicorn
 from server import app
 
-# ZeroGPU free-tier compliance: decorate an active Gradio event handler
 try:
     import spaces
-    has_spaces = True
 except ImportError:
-    has_spaces = False
-
-def gpu_decorator(fn):
-    if has_spaces:
-        return spaces.GPU(fn)
-    return fn
+    class spaces:
+        @staticmethod
+        def GPU(fn):
+            return fn
 
 try:
     import gradio as gr
+    has_gradio = True
+except ImportError:
+    has_gradio = False
 
-    @gpu_decorator
-    def run_pulseai_diagnostic(prompt: str) -> str:
-        return f"PulseAI Engine Online. Status: optimal. Input received: {prompt}"
 
+@spaces.GPU
+def run_pulseai_diagnostic(prompt: str) -> str:
+    """ZeroGPU compliance diagnostic handler."""
+    return f"PulseAI Engine Online. Status: optimal. Input received: {prompt}"
+
+
+if has_gradio:
     with gr.Blocks(title="PulseAI Diagnostic Engine") as demo:
         gr.Markdown(
             "# PulseAI Student Digital Wellness and Academic Impact Platform\n\n"
@@ -44,8 +47,6 @@ try:
         )
 
     app = gr.mount_gradio_app(app, demo, path="/gradio")
-except Exception as err:
-    print(f"Gradio mounting deferred: {err}")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 7860))
