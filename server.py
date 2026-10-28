@@ -525,6 +525,7 @@ app = Starlette(debug=True, routes=routes, middleware=middleware)
 if __name__ == "__main__":
     import os
     port = int(os.environ.get("PORT", 8000))
-    host = os.environ.get("HOST", "127.0.0.1")
+    host = os.environ.get("HOST", "0.0.0.0")
     print(f"Starting PulseAI server on http://{host}:{port} ...")
     uvicorn.run(app, host=host, port=port)
+

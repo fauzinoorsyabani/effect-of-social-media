@@ -1,6 +1,17 @@
+---
+title: PulseAI Student Digital Wellness
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+license: mit
+---
+
 # PulseAI: Student Digital Lifestyle & Academic Impact Platform
 
 A production-grade, mathematically validated machine learning system and diagnostic platform evaluating how digital screen exposure, late-night phone habits, and social media dynamics impact student academic performance (GPA), circadian sleep architecture, perceived stress, and mental resilience.
+
 
 Based on empirical observational survey data of 4,500 students ([harishyadav0506/impact-of-social-media-on-life](https://www.kaggle.com/datasets/harishyadav0506/impact-of-social-media-on-life)).
 
