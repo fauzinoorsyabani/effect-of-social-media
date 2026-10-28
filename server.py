@@ -327,9 +327,9 @@ async def predict(request):
                     "mental_health_index": pred_mental,
                     "overall_impact": pred_impact,
                     "probabilities": {
-                        "Negative": round(probs[0] * 100, 1),
-                        "Neutral": round(probs[1] * 100, 1),
-                        "Beneficial": round(probs[2] * 100, 1),
+                        "Negative": min(99.0, round(probs[0] * 100, 1)),
+                        "Neutral": min(99.0, round(probs[1] * 100, 1)),
+                        "Beneficial": min(99.0, round(probs[2] * 100, 1)),
                     },
                     "archetype": archetype_info,
                     "screen_to_sleep_ratio": round(screen_to_sleep, 2),

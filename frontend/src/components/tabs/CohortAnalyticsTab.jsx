@@ -168,16 +168,16 @@ export default function CohortAnalyticsTab({ overviewData }) {
           Cohort Behavioral Analytics & Cross-Sections
         </h2>
         <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl">
-          Aggregated distributions across primary platform habits, bedtime screen exposure, and empirical stress distributions (N = 4,500).
+          Aggregated distributions across primary platform habits, bedtime screen exposure, and modeled stress associations (N = 4,500 benchmark records).
         </p>
       </div>
 
       {/* 4 Top KPI Stat Cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         <div className="clean-card p-3.5 sm:p-5">
-          <div className="text-[10px] sm:text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">Students Surveyed</div>
+          <div className="text-[10px] sm:text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">Records in Dataset</div>
           <div className="text-xl sm:text-2xl font-bold font-mono-num text-slate-900 mt-1">4,500</div>
-          <div className="text-[10px] sm:text-[11px] text-slate-400 mt-1">Undergrad & Postgrad</div>
+          <div className="text-[10px] sm:text-[11px] text-slate-400 mt-1">Benchmark Dataset</div>
         </div>
 
         <div className="clean-card p-3.5 sm:p-5">
@@ -206,7 +206,7 @@ export default function CohortAnalyticsTab({ overviewData }) {
             Screen Duration by Primary Platform
           </h3>
           <p className="text-[11px] text-slate-400">
-            Average daily hours across platform preferences within surveyed students.
+            Average daily hours across platform preferences within benchmark records.
           </p>
           <div className="h-52 sm:h-60 pt-2">
             <Bar data={platformChartData} options={platformChartOptions} />
@@ -240,7 +240,7 @@ export default function CohortAnalyticsTab({ overviewData }) {
 
         <div className="lg:col-span-2 clean-card p-4 sm:p-6 space-y-3">
           <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider">
-            Core Empirical Behavioral Findings
+            Modeled Associations in Benchmark Data
           </h3>
           <div className="space-y-3 text-xs">
             <div className="p-3.5 rounded-xl bg-slate-50">

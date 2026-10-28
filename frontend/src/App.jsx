@@ -225,7 +225,7 @@ export default function App() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
           <span>PulseAI Student Digital Wellness & Habits Reflection Platform</span>
           <div className="flex flex-wrap justify-center items-center gap-3 sm:space-x-4 text-[11px] text-slate-600">
-            <span>XGBoost 96.2% Acc</span>
+            <span>XGBoost Macro F1 0.92</span>
             <span>Ridge GPA R² 0.50</span>
             <span>K-Means k=3</span>
           </div>

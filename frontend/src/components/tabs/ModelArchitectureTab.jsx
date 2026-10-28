@@ -81,7 +81,7 @@ export default function ModelArchitectureTab({ modelsData }) {
           Model Architecture, Benchmarks & Feature Attribution
         </h2>
         <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl">
-          Empirical cross-validation benchmarks, loss curves, and mathematical feature importance weights fit across 4,500 student records.
+          Holdout benchmarks and feature importance weights derived from 4,500 benchmark records (stratified 80/10/10 split).
         </p>
       </div>
 
@@ -151,7 +151,7 @@ export default function ModelArchitectureTab({ modelsData }) {
               <table className="w-full text-left text-xs min-w-[520px]">
                 <thead className="text-slate-400 bg-slate-50/70 font-mono-num text-[11px]">
                   <tr>
-                    <th className="py-2.5 px-3 rounded-l-lg">Target Phenotypic Metric</th>
+                    <th className="py-2.5 px-3 rounded-l-lg">Target Outcome Metric</th>
                     <th className="py-2.5 px-2">Champion Architecture</th>
                     <th className="py-2.5 px-2">Test R²</th>
                     <th className="py-2.5 px-2">Test RMSE</th>
@@ -194,7 +194,7 @@ export default function ModelArchitectureTab({ modelsData }) {
               </code>
             </div>
             <p className="text-[11px] text-slate-500 leading-relaxed pt-1">
-              Engineered non-linear interaction features eliminate multicollinearity while maximizing gradient descent convergence across both continuous and ordinal loss functions.
+              This ratio captures relative screen pressure against available sleep time, and is the top feature weight (48.6%) in the GPA regressor.
             </p>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function ModelArchitectureTab({ modelsData }) {
         <div className="lg:col-span-5 clean-card p-4 sm:p-6 space-y-3">
           <div className="flex items-center justify-between">
             <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider">
-              Empirical Feature Importance Weights
+              Feature Importance Weights (XGBoost)
             </h3>
             <span className="font-mono-num text-[11px] text-slate-400">Tree Ensemble</span>
           </div>

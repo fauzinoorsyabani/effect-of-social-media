@@ -22,7 +22,7 @@ export default function SimulatorTab({
   const gpa = preds.gpa ?? 3.48;
   const mental = preds.mental_health_index ?? 78.4;
   const ratio = preds.screen_to_sleep_ratio ?? 0.64;
-  const gpaTier = preds.gpa_status ?? 'High Standing';
+  const gpaTier = preds.gpa_status ?? 'Moderate Standing';
   const archetype = preds.archetype || {
     name: 'Disciplined & High-Achieving Healthy Users',
     description: 'Lowest screen time (avg ~3.5h), optimal sleep (~7.5h), lowest stress, and highest average GPA (~3.66).',
@@ -347,7 +347,7 @@ export default function SimulatorTab({
 
               <div>
                 <div className="flex justify-between text-xs mb-1 font-mono-num">
-                  <span className="text-slate-700">Detrimental</span>
+                  <span className="text-slate-700">Negative</span>
                   <span className="text-rose-600 font-medium">{probabilities.Negative.toFixed(1)}%</span>
                 </div>
                 <div className="gauge-track">

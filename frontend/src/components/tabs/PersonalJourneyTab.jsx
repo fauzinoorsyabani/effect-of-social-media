@@ -152,7 +152,7 @@ export default function PersonalJourneyTab({ history, onClearHistory, onExportHi
               Longitudinal Dual-Axis Trajectory
             </h3>
             <p className="text-[11px] text-slate-400 mt-0.5">
-              Empirical resilience index (Blue, left axis) against GPA regression projection (Slate, right axis).
+              Modeled resilience index (Blue, left axis) against GPA regression projection (Slate, right axis).
             </p>
           </div>
           <span className="font-mono-num text-xs px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 self-start xs:self-auto">
