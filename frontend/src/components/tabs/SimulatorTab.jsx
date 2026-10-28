@@ -228,14 +228,22 @@ export default function SimulatorTab({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             {/* GPA Card */}
             <div className="clean-card p-4 sm:p-6">
-              <div className="text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">
-                Predicted Academic GPA
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">
+                  Predicted Academic GPA
+                </span>
+                <span className="text-[10px] font-mono-num font-medium text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md">
+                  ±0.27 RMSE
+                </span>
               </div>
               <div className="flex items-baseline space-x-2 mt-2">
                 <span className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight font-mono-num">
                   {gpa.toFixed(2)}
                 </span>
                 <span className="text-xs font-mono-num text-slate-400">/ 4.00</span>
+              </div>
+              <div className="text-[11px] text-slate-500 font-mono-num mt-1">
+                Estimated Band: {Math.max(1.0, gpa - 0.27).toFixed(2)} – {Math.min(4.0, gpa + 0.27).toFixed(2)} (68% CI)
               </div>
               <div className="mt-3">
                 <div className="gauge-track">
@@ -253,14 +261,22 @@ export default function SimulatorTab({
 
             {/* Mental Health Card */}
             <div className="clean-card p-4 sm:p-6">
-              <div className="text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">
-                Mental Resilience Score
+              <div className="flex items-center justify-between">
+                <span className="text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">
+                  Mental Resilience Score
+                </span>
+                <span className="text-[10px] font-mono-num font-medium text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded-md">
+                  ±5.5 RMSE
+                </span>
               </div>
               <div className="flex items-baseline space-x-2 mt-2">
                 <span className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight font-mono-num">
                   {mental.toFixed(1)}
                 </span>
                 <span className="text-xs font-mono-num text-slate-400">/ 100</span>
+              </div>
+              <div className="text-[11px] text-slate-500 font-mono-num mt-1">
+                Estimated Band: {Math.max(0, mental - 5.5).toFixed(0)} – {Math.min(100, mental + 5.5).toFixed(0)} / 100
               </div>
               <div className="mt-3">
                 <div className="gauge-track">
@@ -271,8 +287,8 @@ export default function SimulatorTab({
                 </div>
               </div>
               <div className="flex justify-between items-center mt-3 text-xs">
-                <span className="font-medium text-slate-800">Empirical Ridge R² = 0.82</span>
-                <span className="text-slate-400 font-mono-num text-[11px]">RMSE ±5.47</span>
+                <span className="font-medium text-slate-800">Ridge R² = 0.82</span>
+                <span className="text-slate-400 font-mono-num text-[11px]">Linear Assoc</span>
               </div>
             </div>
           </div>
@@ -371,6 +387,15 @@ export default function SimulatorTab({
               })}
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Educational & Methodological Disclaimer */}
+      <div className="p-4 rounded-xl bg-slate-50/90 border border-slate-200/60 flex items-start space-x-3 text-xs text-slate-600">
+        <Info className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+        <div className="leading-relaxed">
+          <strong className="text-slate-800 font-semibold block mb-0.5">Educational Simulation Notice:</strong>
+          Projections reflect statistical covariations modeled on a benchmark dataset (GPA regressor R² = 0.50, RMSE ±0.27). These outputs represent observational associations rather than deterministic causal proof or clinical diagnoses. Individual academic outcomes are mediated by multifactorial variables including study methodology, course difficulty, and personal circumstances.
         </div>
       </div>
     </section>

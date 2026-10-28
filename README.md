@@ -9,13 +9,13 @@ pinned: false
 license: mit
 ---
 
-# PulseAI: Student Digital Lifestyle & Academic Impact Platform
+# PulseAI: Student Digital Habits & Academic Impact Reflection Platform
 
-A production-grade, mathematically validated machine learning system and diagnostic platform evaluating how digital screen exposure, late-night phone habits, and social media dynamics impact student academic performance (GPA), circadian sleep architecture, perceived stress, and mental resilience.
+A production-grade, mathematically validated machine learning system and educational simulation platform evaluating how digital screen exposure, late-night phone habits, and social media dynamics statistically correlate with student academic performance (GPA), circadian sleep patterns, perceived stress, and mental resilience.
 
 > **Live Production System**: [https://pulseai.my.id](https://pulseai.my.id) (Edge SSL via Vercel)
 
-Based on empirical observational survey data of 4,500 students ([harishyadav0506/impact-of-social-media-on-life](https://www.kaggle.com/datasets/harishyadav0506/impact-of-social-media-on-life)).
+Based on the open benchmark behavioral dataset of 4,500 student records ([harishyadav0506/impact-of-social-media-on-life](https://www.kaggle.com/datasets/harishyadav0506/impact-of-social-media-on-life)).
 
 ---
 
@@ -44,9 +44,9 @@ Who is this platform built for, and what specific problem does it solve for each
 
 | Stakeholder Group | Core Pain Point | PulseAI Solution | Value Delivered |
 | :--- | :--- | :--- | :--- |
-| **Students & Learners** | Vague, moralistic advice ("stop playing on your phone") without quantified cause-and-effect. | Real-time simulator demonstrating the exact mathematical GPA penalty of an extra 1.5 hours of late-night screen time. | Actionable self-agency and quantifiable habit adjustment without feeling judged. |
+| **Students & Learners** | Vague, moralistic advice ("stop playing on your phone") without quantified cause-and-effect. | Real-time simulator demonstrating the statistical GPA covariation of an extra 1.5 hours of late-night screen time. | Actionable self-agency and quantifiable habit reflection without feeling judged. |
 | **University Academic Advisors & Counselors** | Detecting academic decline only after exams fail, when remediation is difficult and costly. | Early-warning behavioral archetyping (K-Means clustering) identifying High-Risk Sleep-Deprived Doomscrollers. | Proactive preventative counseling before midterms and finals. |
-| **Higher Education Researchers** | Fragmented datasets lacking cross-sectional analysis between circadian health and academic metrics. | Empirical validation of the Displacement Principle and open regression benchmarks. | Reproducible open-source baseline for behavioral epidemiology. |
+| **Higher Education Researchers** | Fragmented datasets lacking cross-sectional analysis between circadian health and academic metrics. | Benchmark validation of the Displacement Principle and open regression benchmarks. | Reproducible open-source baseline for student digital habit modeling. |
 | **Tech Recruiters & AI Engineering Evaluators** | Distinguishing basic notebook scripters from Senior Full-Stack / Forward-Deployed AI Engineers. | Production-grade decoupled architecture: leak-free pipelines, cost-weighted XGBoost, ASGI server, and modern React interface. | Demonstrates end-to-end software craftsmanship, mathematical rigor, and architectural maturity. |
 
 ---
@@ -75,7 +75,7 @@ flowchart TD
 | **XGBoost** | Multi-Class Impact Classifier | Gradient-boosted decision trees inherently capture non-linear feature interactions without requiring manual polynomial expansions. Native sample-weighting resolves class imbalance. | Deep Neural Networks (MLP): Deep learning on 4,500 tabular rows overfits quickly, requires heavy compute, and lacks tabular interpretability. |
 | **Starlette + Uvicorn** | High-Performance ASGI Backend | Asynchronous I/O via `uvloop` and `httptools`, sub-millisecond response latency, lightweight footprint (<15MB RAM), native static file mounting. | Django: Monolithic bloat with hundreds of unused ORM/template features. Flask: WSGI synchronous bottleneck under concurrent requests. |
 | **SQLite** | Persistent Structured Storage | Zero-configuration, zero-cost, single-file serverless ACID database embedded directly in Python. | PostgreSQL / MySQL: Requires managing external database server daemons, ports, and connection pool configuration for a lightweight dataset. |
-| **React + Vite** | Component-Driven Web Interface | Declarative Virtual DOM state propagation, sub-second Hot Module Replacement (HMR), tree-shaken minified production bundle (<150KB gzip). | Vanilla JS DOM scripting: Leads to unmaintainable imperative spaghetti code (`document.getElementById`). Next.js: Unnecessary SSR server complexity for a client-side diagnostic cockpit. |
+| **React + Vite** | Component-Driven Web Interface | Declarative Virtual DOM state propagation, sub-second Hot Module Replacement (HMR), tree-shaken minified production bundle (<150KB gzip). | Vanilla JS DOM scripting: Leads to unmaintainable imperative spaghetti code (`document.getElementById`). Next.js: Unnecessary SSR server complexity for a client-side interactive simulator. |
 | **Chart.js** | Interactive Longitudinal Visualizations | Canvas-based rendering delivering 60 FPS transitions, low bundle overhead, clean responsive scales. | D3.js: Steep learning curve and verbose low-level DOM manipulations unnecessary for standard dual-axis timelines and bar charts. |
 
 ---
@@ -159,12 +159,12 @@ In XGBoost:
 ## 6. The Authentication Dilemma: Why Hybrid Local-First?
 
 ### Should an AI Analytics Platform Force User Login?
-In machine learning portfolio and diagnostic systems, a common mistake is placing an aggressive, mandatory login barrier at the entrypoint.
+In machine learning portfolio and educational analytics systems, a common mistake is placing an aggressive, mandatory login barrier at the entrypoint.
 
 #### Why Mandatory Login Is Counter-Productive:
 1. **Friction and Conversion Collapse**: Reviewers, recruiters, and students want to experience model inference in under 5 seconds. Mandatory registration drops initial engagement by over 80%.
-2. **Privacy Sensitivity**: Students are hesitant to enter sensitive personal data (sleep hours, perceived stress, GPA) into an unfamiliar cloud platform if forced to create a persistent profile.
-3. **Data Scope**: The core ML dataset is already static and validated (4,500 records). The platform does not need to harvest new user credentials to deliver diagnostic value.
+2. **Privacy Sensitivity**: Students are hesitant to enter personal lifestyle data (sleep hours, perceived stress, GPA) into an unfamiliar cloud platform if forced to create a persistent profile.
+3. **Data Scope**: The core ML dataset is already static and validated (4,500 records). The platform does not need to harvest new user credentials to deliver educational value.
 
 #### The PulseAI Architectural Solution: Hybrid Local-First
 We implement a **Local-First, Cloud-Optional Architecture**:
@@ -173,19 +173,19 @@ We implement a **Local-First, Cloud-Optional Architecture**:
   * Zero network transmission of personal health metrics. Completely private and frictionless.
 * **Mode 2: Optional Cloud Sync Account**:
   * Users who actively wish to sync their assessment history between a university desktop and a personal smartphone can create a free lightweight account.
-  * Credentials are secure (salted SHA-256 hash), linking saved assessments to the embedded SQLite engine via authenticated `/api/assessments/save` requests.
+  * Credentials link saved assessments to the embedded SQLite engine via authenticated `/api/assessments/save` requests (with Google OAuth planned for future institutional authentication).
 
 ---
 
-## 7. Core Empirical Behavioral Discoveries
+## 7. Modeled Behavioral Associations & Benchmarks
 
-1. **The Displacement Mechanism (Strongest Determinant)**:
+1. **The Displacement Mechanism (Strongest Association)**:
    * The engineered feature `Screen_to_Sleep_Ratio` ($\text{Daily Usage} / \text{Sleep Duration}$) accounts for **48.6% of GPA model importance** and **80.4% of Mental Health Index importance**.
-   * When daily screen hours exceed sleep duration (ratio > 1.0), cumulative GPA drops below 3.00, regardless of reported study hours.
+   * When daily screen hours exceed sleep duration (ratio > 1.0), cumulative GPA statistically dips below 3.00 within benchmark distributions.
 2. **Platform Stress Variance (ANOVA $p < 0.05$)**:
    * Algorithmic short-video feeds (TikTok, Instagram) generate statistically higher perceived stress scores and late-night usage rates compared to linear video (YouTube) or professional feeds (LinkedIn).
 3. **Non-Linear Bedtime Penalty**:
-   * Phone exposure within 45 minutes of sleep decreases subjective sleep quality by a median of **2.1 points** (on a 10-point scale), depressing next-day cognitive performance.
+   * Phone exposure within 45 minutes of sleep correlates with a median decrease of **2.1 points** in subjective sleep quality ratings (on a 10-point scale).
 
 ---
 
@@ -202,7 +202,30 @@ We implement a **Local-First, Cloud-Optional Architecture**:
 
 ---
 
-## 9. Quickstart & Deployment
+## 9. Methodological Limitations & Scientific Transparency
+
+A credible AI engineering and behavioral analytics system must be transparent about its statistical scope, assumptions, and boundaries:
+
+1. **Observational Association vs. Direct Causality**:
+   * The modeled dependencies reflect **correlational patterns**, not deterministic causal proofs.
+   * In adolescent and student behavioral health, directionality is frequently bidirectional: excessive late-night screen exposure can displace sleep windows, while pre-existing academic anxiety, exam deadlines, or insomnia can reciprocally drive late-night smartphone browsing.
+   
+2. **Benchmark Dataset Provenance & Regularity**:
+   * The underlying dataset ($N = 4,500$) originates from an open Kaggle behavioral benchmark repository.
+   * The exceptionally high separation in classification ($F_1 = 0.9225$) and tight linear associations indicate synthetic or semi-synthetic curation typical of Kaggle practice datasets.
+   * Consequently, PulseAI is positioned as an **educational self-reflection simulator and architectural ML demonstration**, rather than a clinical diagnostic instrument.
+
+3. **Prediction Uncertainty & Confidence Intervals**:
+   * Regressor predictions should not be interpreted as exact deterministic numbers. The continuous GPA model yields $R^2 = 0.5033$ with an $\text{RMSE} = \pm 0.2684$.
+   * Any predicted GPA (e.g., $3.47$) must be evaluated within its $68\%$ prediction confidence interval ($[3.20 - 3.74]$). The UI has been updated to explicitly display these $\pm \text{RMSE}$ bounds.
+
+4. **Regional and Cultural Specificity**:
+   * The benchmark dataset reflects general survey metrics that have not been localized to Indonesian university structures (e.g., Universitas Siliwangi / national grading scales).
+   * Future roadmap milestones prioritize opt-in, localized student habit surveys and screenshot-based Screen Time OCR to calibrate regional model weights.
+
+---
+
+## 10. Quickstart & Deployment
 
 ### Run Locally (Production Full-Stack Mode)
 ```bash
@@ -227,6 +250,6 @@ python -m unittest discover tests
 
 ---
 
-## 10. Author & License
+## 11. Author & License
 Crafted by **Fauzi Noor Syabani**.
 Distributed under the **MIT License**. Free for academic, personal, and research applications.

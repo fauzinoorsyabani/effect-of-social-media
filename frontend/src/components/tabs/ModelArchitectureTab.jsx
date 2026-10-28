@@ -1,4 +1,5 @@
 import React from 'react';
+import { AlertCircle } from 'lucide-react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -211,6 +212,47 @@ export default function ModelArchitectureTab({ modelsData }) {
           </p>
           <div className="h-64 sm:h-76 pt-2">
             <Bar data={featChartData} options={featChartOptions} />
+          </div>
+        </div>
+      </div>
+
+      {/* Methodological Limitations & Scientific Transparency */}
+      <div className="clean-card p-4 sm:p-6 space-y-4 border border-slate-200/60">
+        <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+          <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider flex items-center">
+            <AlertCircle className="w-4 h-4 text-amber-600 mr-2" />
+            Methodological Scope & Scientific Limitations
+          </h3>
+          <span className="font-mono-num text-[11px] text-slate-400">Scientific Integrity</span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <div className="p-3.5 rounded-xl bg-slate-50/80 space-y-1.5">
+            <strong className="text-slate-900 font-semibold block">1. Association vs. Causal Directionality</strong>
+            <p className="text-slate-600 leading-relaxed">
+              Regression outputs demonstrate covariation across digital exposure and sleep duration. In observational behavioral research, causality is often bidirectional: screen scrolling may displace bedtime, or existing stress/insomnia may prompt late-night phone consumption.
+            </p>
+          </div>
+
+          <div className="p-3.5 rounded-xl bg-slate-50/80 space-y-1.5">
+            <strong className="text-slate-900 font-semibold block">2. Benchmark Dataset Provenance</strong>
+            <p className="text-slate-600 leading-relaxed">
+              Models are trained on an open Kaggle benchmark dataset (N = 4,500). Regularized statistical distributions suggest synthetic/semi-synthetic curation. Results serve as an architectural proof-of-concept rather than verified clinical epidemiology.
+            </p>
+          </div>
+
+          <div className="p-3.5 rounded-xl bg-slate-50/80 space-y-1.5">
+            <strong className="text-slate-900 font-semibold block">3. Prediction Uncertainty & Error Bounds</strong>
+            <p className="text-slate-600 leading-relaxed">
+              Continuous GPA regression demonstrates moderate predictive fit (R² = 0.503, RMSE ±0.268). Estimations must be interpreted as probabilistic intervals (e.g. 3.47 ± 0.27) rather than deterministic exact scores.
+            </p>
+          </div>
+
+          <div className="p-3.5 rounded-xl bg-slate-50/80 space-y-1.5">
+            <strong className="text-slate-900 font-semibold block">4. Cultural & Regional Generalization</strong>
+            <p className="text-slate-600 leading-relaxed">
+              Academic grading scales and lifestyle patterns vary significantly across geographies. Future development focuses on opt-in empirical surveys with Indonesian university students to calibrate domain-specific weights.
+            </p>
           </div>
         </div>
       </div>

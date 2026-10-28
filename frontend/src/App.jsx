@@ -223,7 +223,7 @@ export default function App() {
 
       <footer className="mt-12 sm:mt-16 bg-white/80 py-6 sm:py-8 text-center text-xs text-slate-500 font-mono-num border-t border-slate-100/60">
         <div className="max-w-6xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
-          <span>PulseAI Student Digital Phenomics Platform</span>
+          <span>PulseAI Student Digital Wellness & Habits Reflection Platform</span>
           <div className="flex flex-wrap justify-center items-center gap-3 sm:space-x-4 text-[11px] text-slate-600">
             <span>XGBoost 96.2% Acc</span>
             <span>Ridge GPA R² 0.50</span>
