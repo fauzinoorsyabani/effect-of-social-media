@@ -8,6 +8,16 @@ import os
 import uvicorn
 from server import app
 
+# ZeroGPU free-tier compliance anchor
+try:
+    import spaces
+
+    @spaces.GPU
+    def zero_gpu_anchor():
+        return True
+except (ImportError, Exception):
+    pass
+
 # Optional Gradio mount to satisfy Hugging Face Space auto-detection while preserving React root
 try:
     import gradio as gr
