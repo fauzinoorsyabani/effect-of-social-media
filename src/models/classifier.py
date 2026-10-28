@@ -50,17 +50,27 @@ def train_and_compare_classifiers(
     y_test = test_df[TARGET_CLASSIFICATION].map(IMPACT_MAPPING).values
 
     # Compute class weights for imbalanced dataset
+    # WHY: The dataset is ~82% 'Beneficial', ~14% 'Neutral', and ~4% 'Negative'.
+    # Without class weighting, models suffer from majority-class collapse, achieving high accuracy
+    # simply by ignoring minority students. Cost-weighting penalizes errors inversely to frequency.
     classes, counts = np.unique(y_train, return_counts=True)
     total_samples = len(y_train)
     class_weights = {c: total_samples / (len(classes) * count) for c, count in zip(classes, counts)}
     sample_weights_train = np.array([class_weights[y] for y in y_train])
 
     models = {
+        # WHY LogisticRegression with L2:
+        # L2 Regularization (Ridge penalty: lambda * sum(w_j^2)) shrinks weights smoothly,
+        # preventing multicollinearity without completely zeroing out interacting features.
         "LogisticRegression": LogisticRegression(
+            penalty="l2",
+            C=1.0,
             class_weight="balanced",
             max_iter=1000,
             random_state=RANDOM_SEED,
         ),
+        # WHY RandomForest:
+        # Ensembles 200 de-correlated bootstrap trees; max_depth=12 caps memorization.
         "RandomForest": RandomForestClassifier(
             n_estimators=200,
             max_depth=12,
@@ -68,6 +78,9 @@ def train_and_compare_classifiers(
             random_state=RANDOM_SEED,
             n_jobs=-1,
         ),
+        # WHY XGBoost (Champion):
+        # Gradient boosted trees minimize multi-class log-loss sequentially, capturing complex
+        # non-linear thresholds (e.g. sharp drops when screen-to-sleep ratio crosses 1.0).
         "XGBoost": XGBClassifier(
             n_estimators=200,
             max_depth=6,
@@ -77,6 +90,7 @@ def train_and_compare_classifiers(
             n_jobs=-1,
         ),
     }
+
 
     results = {}
     best_model_name = None
