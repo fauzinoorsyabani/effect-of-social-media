@@ -17,17 +17,43 @@ body {
   margin: 0;
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: #f8fafc;
-  /* Engineering graph paper grid pattern */
-  background-image: 
-    linear-gradient(to right, rgba(148, 163, 184, 0.12) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
-  background-size: 28px 28px;
-  background-attachment: fixed;
   color: var(--ink);
   min-height: 100vh;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Engineering graph paper grid:
+   High-precision engineering grid on desktop, scaling down and gently fading out on smaller mobile viewports */
+@media (min-width: 1024px) {
+  body {
+    background-image: 
+      linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  body {
+    background-image: 
+      linear-gradient(to right, rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.045) 1px, transparent 1px);
+    background-size: 16px 16px;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    background-image: 
+      linear-gradient(to right, rgba(148, 163, 184, 0.025) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.025) 1px, transparent 1px);
+    background-size: 12px 12px;
+    background-attachment: scroll;
+  }
 }
 
 /* Borderless Clean Card with Soft Elevation */

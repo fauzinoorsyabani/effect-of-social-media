@@ -178,16 +178,16 @@ export default function SimulatorTab({
           {/* Selector: Primary Platform */}
           <div className="space-y-2">
             <label className="block text-xs font-medium text-slate-800">Primary Platform</label>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-1.5">
+            <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 gap-1.5">
               {platforms.map((p) => {
                 const isSelected = params.primary_platform === p;
                 return (
                   <button
                     key={p}
                     onClick={() => setParams({ ...params, primary_platform: p })}
-                    className={`py-1.5 px-1.5 sm:px-2 rounded-lg text-xs font-medium transition cursor-pointer truncate text-center ${
+                    className={`py-2 px-2 rounded-lg text-xs font-medium transition-all cursor-pointer truncate text-center ${
                       isSelected
-                        ? 'bg-slate-900 text-white shadow-xs'
+                        ? 'bg-slate-900 text-white shadow-xs font-semibold'
                         : 'bg-slate-100 text-slate-600 hover:text-slate-900 hover:bg-slate-200/70'
                     }`}
                   >
@@ -201,16 +201,16 @@ export default function SimulatorTab({
           {/* Selector: Social Comparison Frequency */}
           <div className="space-y-2">
             <label className="block text-xs font-medium text-slate-800">Upward Social Comparison Frequency</label>
-            <div className="grid grid-cols-5 gap-1">
+            <div className="grid grid-cols-3 xs:grid-cols-5 gap-1.5">
               {comparisons.map((c) => {
                 const isSelected = params.social_comparison_frequency === c.val;
                 return (
                   <button
                     key={c.val}
                     onClick={() => setParams({ ...params, social_comparison_frequency: c.val })}
-                    className={`py-1.5 px-1 sm:px-1.5 rounded-lg text-[11px] sm:text-xs font-medium transition cursor-pointer text-center ${
+                    className={`py-2 px-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer text-center ${
                       isSelected
-                        ? 'bg-slate-900 text-white shadow-xs'
+                        ? 'bg-slate-900 text-white shadow-xs font-semibold'
                         : 'bg-slate-100 text-slate-600 hover:text-slate-900 hover:bg-slate-200/70'
                     }`}
                   >
