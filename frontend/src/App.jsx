@@ -190,7 +190,7 @@ export default function App() {
         onOpenAuthModal={() => setIsAuthModalOpen(true)}
       />
 
-      <main className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-14 py-10 flex-1 w-full space-y-8">
+      <main className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-10 py-6 sm:py-10 flex-1 w-full space-y-6 sm:space-y-8">
         {activeTab === 'simulator' && (
           <SimulatorTab
             params={params}
@@ -221,10 +221,10 @@ export default function App() {
         onAuthSuccess={handleAuthSuccess}
       />
 
-      <footer className="mt-16 bg-white/80 py-8 text-center text-xs text-slate-500 font-mono-num">
-        <div className="max-w-6xl mx-auto px-6 sm:px-10 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <footer className="mt-12 sm:mt-16 bg-white/80 py-6 sm:py-8 text-center text-xs text-slate-500 font-mono-num border-t border-slate-100/60">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
           <span>PulseAI Student Digital Phenomics Platform</span>
-          <div className="flex items-center space-x-4 text-[11px] text-slate-600">
+          <div className="flex flex-wrap justify-center items-center gap-3 sm:space-x-4 text-[11px] text-slate-600">
             <span>XGBoost 96.2% Acc</span>
             <span>Ridge GPA R² 0.50</span>
             <span>K-Means k=3</span>

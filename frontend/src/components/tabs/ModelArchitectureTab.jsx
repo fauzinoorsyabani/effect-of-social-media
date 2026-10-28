@@ -76,19 +76,19 @@ export default function ModelArchitectureTab({ modelsData }) {
     <section className="space-y-6">
       {/* Section Header */}
       <div>
-        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">
           Model Architecture, Benchmarks & Feature Attribution
         </h2>
-        <p className="text-sm text-slate-500 mt-1 max-w-2xl">
+        <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl">
           Empirical cross-validation benchmarks, loss curves, and mathematical feature importance weights fit across 4,500 student records.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        <div className="lg:col-span-7 space-y-5">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start">
+        <div className="lg:col-span-7 space-y-4 sm:space-y-5">
           {/* Classifier Table */}
-          <div className="clean-card p-6 space-y-3">
-            <div className="flex items-center justify-between">
+          <div className="clean-card p-4 sm:p-6 space-y-3">
+            <div className="flex flex-col xs:flex-row xs:items-center justify-between gap-1">
               <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider">
                 Multi-Class Impact Classifier (Test Set N = 450)
               </h3>
@@ -96,8 +96,8 @@ export default function ModelArchitectureTab({ modelsData }) {
                 Stratified 80/10/10 Split
               </span>
             </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-xs">
+            <div className="overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
+              <table className="w-full text-left text-xs min-w-[520px]">
                 <thead className="text-slate-400 bg-slate-50/70 font-mono-num text-[11px]">
                   <tr>
                     <th className="py-2.5 px-3 rounded-l-lg">Candidate Algorithm</th>
@@ -128,7 +128,7 @@ export default function ModelArchitectureTab({ modelsData }) {
                   </tr>
                   <tr className="bg-blue-50/60 text-blue-900 font-semibold">
                     <td className="py-3 px-3 font-sans font-semibold text-blue-700 flex items-center">
-                      <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-2"></span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mr-2 shrink-0"></span>
                       XGBoost (Production Champion)
                     </td>
                     <td className="px-2">0.9328</td>
@@ -142,12 +142,12 @@ export default function ModelArchitectureTab({ modelsData }) {
           </div>
 
           {/* Regression Table */}
-          <div className="clean-card p-6 space-y-3">
+          <div className="clean-card p-4 sm:p-6 space-y-3">
             <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider">
               Continuous Parameter Regressors (Test Set N = 450)
             </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-xs">
+            <div className="overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
+              <table className="w-full text-left text-xs min-w-[520px]">
                 <thead className="text-slate-400 bg-slate-50/70 font-mono-num text-[11px]">
                   <tr>
                     <th className="py-2.5 px-3 rounded-l-lg">Target Phenotypic Metric</th>
@@ -182,13 +182,13 @@ export default function ModelArchitectureTab({ modelsData }) {
           </div>
 
           {/* Mathematical Proof Card */}
-          <div className="clean-card p-5 space-y-2 bg-slate-50/70">
+          <div className="clean-card p-4 sm:p-5 space-y-2 bg-slate-50/70">
             <span className="text-[10px] font-mono-num uppercase tracking-wider text-slate-400 font-semibold">
               Mathematical Foundation
             </span>
-            <div className="text-xs text-slate-800">
+            <div className="text-xs text-slate-800 flex flex-wrap items-center gap-1.5">
               <span className="font-mono-num font-semibold text-blue-600">Displacement Formulation: </span>
-              <code className="font-mono-num bg-white px-2 py-0.5 rounded-md text-slate-800 shadow-2xs">
+              <code className="font-mono-num bg-white px-2 py-0.5 rounded-md text-slate-800 shadow-2xs break-all">
                 Screen_to_Sleep_Ratio = Daily_Usage_Hours / Sleep_Duration_Hours
               </code>
             </div>
@@ -199,7 +199,7 @@ export default function ModelArchitectureTab({ modelsData }) {
         </div>
 
         {/* Feature Importance */}
-        <div className="lg:col-span-5 clean-card p-6 space-y-3">
+        <div className="lg:col-span-5 clean-card p-4 sm:p-6 space-y-3">
           <div className="flex items-center justify-between">
             <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider">
               Empirical Feature Importance Weights
@@ -209,7 +209,7 @@ export default function ModelArchitectureTab({ modelsData }) {
           <p className="text-[11px] text-slate-400">
             Attribution weights identifying primary drivers of student GPA variance.
           </p>
-          <div className="h-76 pt-2">
+          <div className="h-64 sm:h-76 pt-2">
             <Bar data={featChartData} options={featChartOptions} />
           </div>
         </div>

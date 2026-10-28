@@ -164,81 +164,81 @@ export default function CohortAnalyticsTab({ overviewData }) {
     <section className="space-y-6">
       {/* Section Header */}
       <div>
-        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">
           Cohort Behavioral Analytics & Cross-Sections
         </h2>
-        <p className="text-sm text-slate-500 mt-1 max-w-2xl">
+        <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl">
           Aggregated distributions across primary platform habits, bedtime screen exposure, and empirical stress distributions (N = 4,500).
         </p>
       </div>
 
       {/* 4 Top KPI Stat Cards */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="clean-card p-5">
-          <div className="text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">Students Surveyed</div>
-          <div className="text-2xl font-bold font-mono-num text-slate-900 mt-1">4,500</div>
-          <div className="text-[11px] text-slate-400 mt-1">Undergrad & Postgrad</div>
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div className="clean-card p-3.5 sm:p-5">
+          <div className="text-[10px] sm:text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">Students Surveyed</div>
+          <div className="text-xl sm:text-2xl font-bold font-mono-num text-slate-900 mt-1">4,500</div>
+          <div className="text-[10px] sm:text-[11px] text-slate-400 mt-1">Undergrad & Postgrad</div>
         </div>
 
-        <div className="clean-card p-5">
-          <div className="text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">Mean Daily Screen</div>
-          <div className="text-2xl font-bold font-mono-num text-blue-600 mt-1">{data.avg_daily_screen} hrs</div>
-          <div className="text-[11px] text-slate-400 mt-1 font-mono-num">Std Dev: 2.1 hrs</div>
+        <div className="clean-card p-3.5 sm:p-5">
+          <div className="text-[10px] sm:text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">Mean Daily Screen</div>
+          <div className="text-xl sm:text-2xl font-bold font-mono-num text-blue-600 mt-1">{data.avg_daily_screen} hrs</div>
+          <div className="text-[10px] sm:text-[11px] text-slate-400 mt-1 font-mono-num">Std Dev: 2.1 hrs</div>
         </div>
 
-        <div className="clean-card p-5">
-          <div className="text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">Mean Sleep Duration</div>
-          <div className="text-2xl font-bold font-mono-num text-slate-800 mt-1">{data.avg_sleep_hours} hrs</div>
-          <div className="text-[11px] text-slate-400 mt-1 font-mono-num">36.1% Below 6.0h Threshold</div>
+        <div className="clean-card p-3.5 sm:p-5">
+          <div className="text-[10px] sm:text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">Mean Sleep Duration</div>
+          <div className="text-xl sm:text-2xl font-bold font-mono-num text-slate-800 mt-1">{data.avg_sleep_hours} hrs</div>
+          <div className="text-[10px] sm:text-[11px] text-slate-400 mt-1 font-mono-num">36.1% Below 6.0h</div>
         </div>
 
-        <div className="clean-card p-5">
-          <div className="text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">Late-Night Exposure</div>
-          <div className="text-2xl font-bold font-mono-num text-rose-600 mt-1">{data.late_night_pct}%</div>
-          <div className="text-[11px] text-slate-400 mt-1">Active Bedtime Screen Use</div>
+        <div className="clean-card p-3.5 sm:p-5">
+          <div className="text-[10px] sm:text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">Late-Night Exposure</div>
+          <div className="text-xl sm:text-2xl font-bold font-mono-num text-rose-600 mt-1">{data.late_night_pct}%</div>
+          <div className="text-[10px] sm:text-[11px] text-slate-400 mt-1">Active Bedtime Screen</div>
         </div>
       </div>
 
       {/* Charts Grid 1 */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <div className="clean-card p-6 space-y-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5">
+        <div className="clean-card p-4 sm:p-6 space-y-2">
           <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider">
             Screen Duration by Primary Platform
           </h3>
           <p className="text-[11px] text-slate-400">
             Average daily hours across platform preferences within surveyed students.
           </p>
-          <div className="h-60 pt-2">
+          <div className="h-52 sm:h-60 pt-2">
             <Bar data={platformChartData} options={platformChartOptions} />
           </div>
         </div>
 
-        <div className="clean-card p-6 space-y-2">
+        <div className="clean-card p-4 sm:p-6 space-y-2">
           <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider">
             Upward Social Comparison vs. Perceived Stress
           </h3>
           <p className="text-[11px] text-slate-400">
             Psychological stress scores (0-40) mapped to comparison frequency.
           </p>
-          <div className="h-60 pt-2">
+          <div className="h-52 sm:h-60 pt-2">
             <Line data={stressChartData} options={stressChartOptions} />
           </div>
         </div>
       </div>
 
       {/* Charts Grid 2 */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-        <div className="clean-card p-6 space-y-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5">
+        <div className="clean-card p-4 sm:p-6 space-y-2">
           <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider">
             Overall Impact Proportions
           </h3>
           <p className="text-[11px] text-slate-400">Cohort distribution across 4,500 labeled records.</p>
-          <div className="h-52 pt-1">
+          <div className="h-48 sm:h-52 pt-1">
             <Doughnut data={impactChartData} options={impactChartOptions} />
           </div>
         </div>
 
-        <div className="lg:col-span-2 clean-card p-6 space-y-3">
+        <div className="lg:col-span-2 clean-card p-4 sm:p-6 space-y-3">
           <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider">
             Core Empirical Behavioral Findings
           </h3>

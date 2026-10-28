@@ -116,27 +116,27 @@ export default function PersonalJourneyTab({ history, onClearHistory, onExportHi
   return (
     <section className="space-y-6">
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 sm:gap-4">
         <div>
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">
             Personal Wellness & Academic Timeline
           </h2>
-          <p className="text-sm text-slate-500 mt-1 max-w-2xl">
+          <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl">
             Evaluate your iterative behavioral adjustments over time to monitor trajectory shifts in resilience and projected GPA.
           </p>
         </div>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 w-full sm:w-auto">
           <button
             onClick={onExportHistory}
-            className="px-4 py-2 rounded-xl text-xs font-medium text-slate-800 bg-white hover:bg-slate-100 transition flex items-center space-x-1.5 cursor-pointer shadow-xs"
+            className="flex-1 sm:flex-initial justify-center px-4 py-2 rounded-xl text-xs font-medium text-slate-800 bg-white hover:bg-slate-100 transition flex items-center space-x-1.5 cursor-pointer shadow-xs border border-slate-200/60"
           >
             <Download className="w-3.5 h-3.5 text-slate-500" />
             <span>Export JSON</span>
           </button>
           <button
             onClick={onClearHistory}
-            className="px-4 py-2 rounded-xl text-xs font-medium text-rose-600 bg-rose-50 hover:bg-rose-100 transition flex items-center space-x-1 cursor-pointer"
+            className="flex-1 sm:flex-initial justify-center px-4 py-2 rounded-xl text-xs font-medium text-rose-600 bg-rose-50 hover:bg-rose-100 transition flex items-center space-x-1 cursor-pointer"
           >
             <Trash2 className="w-3.5 h-3.5 text-rose-600" />
             <span>Clear History</span>
@@ -145,8 +145,8 @@ export default function PersonalJourneyTab({ history, onClearHistory, onExportHi
       </div>
 
       {/* History Progress Chart */}
-      <div className="clean-card p-6 space-y-3">
-        <div className="flex justify-between items-center">
+      <div className="clean-card p-4 sm:p-6 space-y-3">
+        <div className="flex flex-col xs:flex-row xs:items-center justify-between gap-2">
           <div>
             <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider">
               Longitudinal Dual-Axis Trajectory
@@ -155,22 +155,22 @@ export default function PersonalJourneyTab({ history, onClearHistory, onExportHi
               Empirical resilience index (Blue, left axis) against GPA regression projection (Slate, right axis).
             </p>
           </div>
-          <span className="font-mono-num text-xs px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600">
+          <span className="font-mono-num text-xs px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 self-start xs:self-auto">
             {history.length} Assessments
           </span>
         </div>
-        <div className="h-68">
+        <div className="h-56 sm:h-68">
           <Line data={chartData} options={chartOptions} />
         </div>
       </div>
 
       {/* History Table Log */}
-      <div className="clean-card p-6 space-y-4">
+      <div className="clean-card p-4 sm:p-6 space-y-4">
         <h3 className="font-semibold text-xs text-slate-800 uppercase tracking-wider">
           Assessment History Ledger
         </h3>
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs">
+        <div className="overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
+          <table className="w-full text-left text-xs min-w-[600px]">
             <thead className="text-slate-400 bg-slate-50/70 font-mono-num text-[11px]">
               <tr>
                 <th className="py-2.5 px-3 rounded-l-lg">Date & Time</th>

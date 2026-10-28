@@ -36,27 +36,27 @@ export default function SimulatorTab({
   return (
     <section className="space-y-6">
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 sm:gap-4">
         <div>
-          <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">
             Digital Lifestyle & Academic Simulator
           </h1>
-          <p className="text-sm text-slate-500 mt-1 max-w-2xl">
+          <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl">
             Simulate daily screen exposure intervals and sleep habits to compute predictive projections across academic GPA and mental resilience.
           </p>
         </div>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 w-full sm:w-auto">
           <button
             onClick={onSaveAssessment}
-            className="px-4 py-2 rounded-xl text-xs font-medium text-white bg-blue-600 hover:bg-blue-700 transition flex items-center space-x-1.5 cursor-pointer shadow-xs"
+            className="flex-1 sm:flex-initial justify-center px-4 py-2 rounded-xl text-xs font-medium text-white bg-blue-600 hover:bg-blue-700 transition flex items-center space-x-1.5 cursor-pointer shadow-xs"
           >
             <Save className="w-3.5 h-3.5" />
             <span>Save Assessment</span>
           </button>
           <button
             onClick={onResetDefaults}
-            className="px-3.5 py-2 rounded-xl text-xs font-medium text-slate-700 bg-white hover:bg-slate-100 transition flex items-center space-x-1 cursor-pointer shadow-xs"
+            className="px-3.5 py-2 rounded-xl text-xs font-medium text-slate-700 bg-white hover:bg-slate-100 transition flex items-center justify-center space-x-1 cursor-pointer shadow-xs border border-slate-200/60"
           >
             <RotateCcw className="w-3.5 h-3.5 text-slate-500" />
             <span>Reset</span>
@@ -65,9 +65,9 @@ export default function SimulatorTab({
       </div>
 
       {/* Simulator Interactive Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start">
         {/* Left: Input Parameter Controls (5 cols) */}
-        <div className="lg:col-span-5 clean-card p-6 space-y-5">
+        <div className="lg:col-span-5 clean-card p-4 sm:p-6 space-y-5">
           <div className="flex items-center justify-between pb-3">
             <h2 className="font-semibold text-xs tracking-wider text-slate-800 uppercase flex items-center">
               <SlidersHorizontal className="w-3.5 h-3.5 text-blue-600 mr-2" />
@@ -178,14 +178,14 @@ export default function SimulatorTab({
           {/* Selector: Primary Platform */}
           <div className="space-y-2">
             <label className="block text-xs font-medium text-slate-800">Primary Platform</label>
-            <div className="grid grid-cols-4 gap-1.5">
+            <div className="grid grid-cols-3 sm:grid-cols-4 gap-1.5">
               {platforms.map((p) => {
                 const isSelected = params.primary_platform === p;
                 return (
                   <button
                     key={p}
                     onClick={() => setParams({ ...params, primary_platform: p })}
-                    className={`py-1.5 px-2 rounded-lg text-xs font-medium transition cursor-pointer truncate ${
+                    className={`py-1.5 px-1.5 sm:px-2 rounded-lg text-xs font-medium transition cursor-pointer truncate text-center ${
                       isSelected
                         ? 'bg-slate-900 text-white shadow-xs'
                         : 'bg-slate-100 text-slate-600 hover:text-slate-900 hover:bg-slate-200/70'
@@ -208,7 +208,7 @@ export default function SimulatorTab({
                   <button
                     key={c.val}
                     onClick={() => setParams({ ...params, social_comparison_frequency: c.val })}
-                    className={`py-1.5 px-1.5 rounded-lg text-xs font-medium transition cursor-pointer text-center ${
+                    className={`py-1.5 px-1 sm:px-1.5 rounded-lg text-[11px] sm:text-xs font-medium transition cursor-pointer text-center ${
                       isSelected
                         ? 'bg-slate-900 text-white shadow-xs'
                         : 'bg-slate-100 text-slate-600 hover:text-slate-900 hover:bg-slate-200/70'
@@ -223,16 +223,16 @@ export default function SimulatorTab({
         </div>
 
         {/* Right: Real-Time Prediction Cockpit (7 cols) */}
-        <div className="lg:col-span-7 space-y-5">
+        <div className="lg:col-span-7 space-y-4 sm:space-y-5">
           {/* Primary Metric Cards (2 Grid) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             {/* GPA Card */}
-            <div className="clean-card p-6">
+            <div className="clean-card p-4 sm:p-6">
               <div className="text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">
                 Predicted Academic GPA
               </div>
               <div className="flex items-baseline space-x-2 mt-2">
-                <span className="text-3xl font-bold text-slate-900 tracking-tight font-mono-num">
+                <span className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight font-mono-num">
                   {gpa.toFixed(2)}
                 </span>
                 <span className="text-xs font-mono-num text-slate-400">/ 4.00</span>
@@ -252,12 +252,12 @@ export default function SimulatorTab({
             </div>
 
             {/* Mental Health Card */}
-            <div className="clean-card p-6">
+            <div className="clean-card p-4 sm:p-6">
               <div className="text-[11px] font-mono-num font-semibold text-slate-400 uppercase tracking-wider">
                 Mental Resilience Score
               </div>
               <div className="flex items-baseline space-x-2 mt-2">
-                <span className="text-3xl font-bold text-slate-900 tracking-tight font-mono-num">
+                <span className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight font-mono-num">
                   {mental.toFixed(1)}
                 </span>
                 <span className="text-xs font-mono-num text-slate-400">/ 100</span>
@@ -278,7 +278,7 @@ export default function SimulatorTab({
           </div>
 
           {/* Archetype Persona Card */}
-          <div className="clean-card p-6">
+          <div className="clean-card p-4 sm:p-6">
             <div className="flex items-start justify-between">
               <div>
                 <span className="text-[10px] font-mono-num uppercase tracking-wider text-slate-400">
@@ -298,7 +298,7 @@ export default function SimulatorTab({
           </div>
 
           {/* Overall Impact Classification */}
-          <div className="clean-card p-6 space-y-4">
+          <div className="clean-card p-4 sm:p-6 space-y-4">
             <div className="flex items-center justify-between">
               <h4 className="font-semibold text-xs tracking-wider uppercase text-slate-800">
                 Impact Class Probabilities (XGBoost)
@@ -342,7 +342,7 @@ export default function SimulatorTab({
           </div>
 
           {/* Actionable Directives */}
-          <div className="clean-card p-6 space-y-3">
+          <div className="clean-card p-4 sm:p-6 space-y-3">
             <h4 className="font-semibold text-xs tracking-wider uppercase text-slate-800 flex items-center">
               <ShieldCheck className="w-4 h-4 text-blue-600 mr-2" />
               Actionable Behavioral Directives
