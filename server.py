@@ -180,10 +180,14 @@ async def index(request):
 
 
 async def favicon(request):
-    """Serve the WebP favicon."""
-    fav_path = STATIC_DIR / "favicon.webp"
-    if fav_path.exists():
-        return FileResponse(str(fav_path), media_type="image/webp")
+    """Serve the favicon in requested format (.ico, .png, .webp)."""
+    path_name = request.url.path.strip("/")
+    if path_name.endswith(".ico") and (STATIC_DIR / "favicon.ico").exists():
+        return FileResponse(str(STATIC_DIR / "favicon.ico"), media_type="image/x-icon")
+    if path_name.endswith(".png") and (STATIC_DIR / path_name).exists():
+        return FileResponse(str(STATIC_DIR / path_name), media_type="image/png")
+    if (STATIC_DIR / "favicon.webp").exists():
+        return FileResponse(str(STATIC_DIR / "favicon.webp"), media_type="image/webp")
     return JSONResponse({"error": "No favicon"}, status_code=404)
 
 
@@ -513,6 +517,9 @@ routes = [
     Route("/api/auth/login", login, methods=["POST"]),
     Route("/favicon.webp", favicon, methods=["GET"]),
     Route("/favicon.ico", favicon, methods=["GET"]),
+    Route("/favicon.png", favicon, methods=["GET"]),
+    Route("/favicon-32x32.png", favicon, methods=["GET"]),
+    Route("/apple-touch-icon.png", favicon, methods=["GET"]),
     Route("/logo.webp", logo, methods=["GET"]),
     Mount("/assets", StaticFiles(directory=str(STATIC_DIR / "assets")), name="assets"),
     Mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static"),

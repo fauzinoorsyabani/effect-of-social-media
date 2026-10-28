@@ -32,7 +32,27 @@
     },
     {
       "src": "/favicon.ico",
+      "dest": "static/favicon.ico"
+    },
+    {
+      "src": "/favicon.png",
       "dest": "static/favicon.png"
+    },
+    {
+      "src": "/favicon.webp",
+      "dest": "static/favicon.webp"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "dest": "static/favicon-32x32.png"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "dest": "static/favicon-192x192.png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "dest": "static/apple-touch-icon.png"
     },
     {
       "src": "/(.*)",
