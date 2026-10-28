@@ -2,8 +2,9 @@
 title: PulseAI Student Digital Wellness
 colorFrom: blue
 colorTo: indigo
-sdk: docker
-app_port: 7860
+sdk: gradio
+sdk_version: 5.4.0
+app_file: app.py
 pinned: false
 license: mit
 ---
